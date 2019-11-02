@@ -1,0 +1,5 @@
+---
+applications:
+ - name: yunqian
+   random-route: true
+   buildpack: php_buildpack

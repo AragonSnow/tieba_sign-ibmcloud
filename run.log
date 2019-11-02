@@ -1,0 +1,842 @@
+Invoking 'cf logs --recent tieba-cloud-sign'...
+
+Retrieving logs for app tieba-cloud-sign in org admin@aragon.wang / space dev as admin@aragon.wang...
+
+   2019-10-31T23:11:25.02+0800 [RTR/26] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:11:25.003+0000] "GET /setup/install.php?step=2 HTTP/1.1" 200 0 2015 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=1" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.34:58158" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.186.136.34" x_forwarded_proto:"https" vcap_request_id:"f33f4974-b011-4a16-418f-07d99ab81a08" response_time:0.020885043 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"9f474cea5dbaf99de5401827" true_client_ip:"-" x_b3_traceid:"5403216becc6dadd" x_b3_spanid:"5403216becc6dadd" x_b3_parentspanid:"-" b3:"5403216becc6dadd-5403216becc6dadd"
+   2019-10-31T23:11:25.02+0800 [RTR/26] OUT 
+   2019-10-31T23:11:25.06+0800 [APP/PROC/WEB/0] OUT 15:11:25 nginx   | 39.190.214.105 - - [31/Oct/2019:15:11:25 +0000] "GET /setup/install.php?step=2 HTTP/1.1" 200 2027 vcap_request_id=f33f4974-b011-4a16-418f-07d99ab81a08
+   2019-10-31T23:11:38.94+0800 [RTR/22] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:11:38.928+0000] "GET /setup/install.php?step=3 HTTP/1.1" 200 0 4041 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.34:10409" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.186.136.34" x_forwarded_proto:"https" vcap_request_id:"8e1843e8-5227-4563-71fa-006b239c0acb" response_time:0.019174297 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"9f474cea5dbaf9aaff1dc059" true_client_ip:"-" x_b3_traceid:"beaa373cfef2cab7" x_b3_spanid:"beaa373cfef2cab7" x_b3_parentspanid:"-" b3:"beaa373cfef2cab7-beaa373cfef2cab7"
+   2019-10-31T23:11:38.94+0800 [RTR/22] OUT 
+   2019-10-31T23:11:38.97+0800 [APP/PROC/WEB/0] OUT 15:11:38 nginx   | 39.190.214.105 - - [31/Oct/2019:15:11:38 +0000] "GET /setup/install.php?step=3 HTTP/1.1" 200 4053 vcap_request_id=8e1843e8-5227-4563-71fa-006b239c0acb
+   2019-10-31T23:19:14.37+0800 [RTR/21] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:13.430+0000] "POST /setup/install.php?step=4 HTTP/1.1" 200 158 1919 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=3" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:45915" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"90f84bc1-1d91-46d9-6818-4e01eae66042" response_time:0.945731205 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb71d6964cb3" true_client_ip:"-" x_b3_traceid:"931b39d53cd2a87b" x_b3_spanid:"931b39d53cd2a87b" x_b3_parentspanid:"-" b3:"931b39d53cd2a87b-931b39d53cd2a87b"
+   2019-10-31T23:19:14.37+0800 [RTR/21] OUT 
+   2019-10-31T23:19:14.47+0800 [APP/PROC/WEB/0] OUT 15:19:14 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:14 +0000] "POST /setup/install.php?step=4 HTTP/1.1" 200 1931 vcap_request_id=90f84bc1-1d91-46d9-6818-4e01eae66042
+   2019-10-31T23:19:15.01+0800 [RTR/9] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:14.995+0000] "GET /setup/stat.js?type=tcs&ver=4.0 HTTP/1.1" 404 0 548 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=4" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:56204" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"c267f450-04e9-428b-5cce-4a8ba580d8e0" response_time:0.023370358 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb738e626c3d" true_client_ip:"-" x_b3_traceid:"3a822665af4c6e37" x_b3_spanid:"3a822665af4c6e37" x_b3_parentspanid:"-" b3:"3a822665af4c6e37-3a822665af4c6e37"
+   2019-10-31T23:19:15.01+0800 [RTR/9] OUT 
+   2019-10-31T23:19:15.07+0800 [APP/PROC/WEB/0] OUT 15:19:15 nginx   | 2019/10/31 15:19:15 [error] 95#0: *55 open() "/home/vcap/app/WEBDIR/setup/stat.js" failed (2: No such file or directory), client: 39.190.214.105, server: _, request: "GET /setup/stat.js?type=tcs&ver=4.0 HTTP/1.1", host: "tieba-cloud-sign.us-south.cf.appdomain.cloud", referrer: "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=4"
+   2019-10-31T23:19:15.07+0800 [APP/PROC/WEB/0] OUT 15:19:15 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:15 +0000] "GET /setup/stat.js?type=tcs&ver=4.0 HTTP/1.1" 404 548 vcap_request_id=c267f450-04e9-428b-5cce-4a8ba580d8e0
+   2019-10-31T23:19:15.78+0800 [RTR/17] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:15.738+0000] "GET /setup/install.php?step=5 HTTP/1.1" 200 0 2509 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=4" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:23064" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"2cf20d98-4f72-4204-67e0-1d9db79512df" response_time:0.041688896 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb73d590bcbf" true_client_ip:"-" x_b3_traceid:"42b8e6a8c4d48897" x_b3_spanid:"42b8e6a8c4d48897" x_b3_parentspanid:"-" b3:"42b8e6a8c4d48897-42b8e6a8c4d48897"
+   2019-10-31T23:19:15.78+0800 [RTR/17] OUT 
+   2019-10-31T23:19:15.79+0800 [APP/PROC/WEB/0] OUT 15:19:15 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:15 +0000] "GET /setup/install.php?step=5 HTTP/1.1" 200 2521 vcap_request_id=2cf20d98-4f72-4204-67e0-1d9db79512df
+   2019-10-31T23:19:32.97+0800 [RTR/11] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:32.935+0000] "GET /index.php HTTP/1.1" 500 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:46419" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"598f6394-4523-4b56-5f5e-e46508f0155f" response_time:0.0388535 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb84905d3237" true_client_ip:"-" x_b3_traceid:"8a14f59b823eb8a3" x_b3_spanid:"8a14f59b823eb8a3" x_b3_parentspanid:"-" b3:"8a14f59b823eb8a3-8a14f59b823eb8a3"
+   2019-10-31T23:19:32.97+0800 [RTR/11] OUT 
+   2019-10-31T23:19:33.01+0800 [APP/PROC/WEB/0] OUT 15:19:33 nginx   | 2019/10/31 15:19:32 [error] 95#0: *59 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'DB_NAME' (T_STRING), expecting ',' or ')' in /home/vcap/app/WEBDIR/config.php on line 13" while reading response header from upstream, client: 39.190.214.105, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/tmp/php-fpm.socket:", host: "tieba-cloud-sign.us-south.cf.appdomain.cloud", referrer: "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5"
+   2019-10-31T23:19:33.01+0800 [APP/PROC/WEB/0] OUT 15:19:33 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:32 +0000] "GET /index.php HTTP/1.1" 500 5 vcap_request_id=598f6394-4523-4b56-5f5e-e46508f0155f
+   2019-10-31T23:19:36.81+0800 [RTR/9] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:36.803+0000] "GET /index.php HTTP/1.1" 500 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:47862" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"5efd778d-2af7-4ce6-5b54-3207c8ac623e" response_time:0.009462318 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb88d592f1ff" true_client_ip:"-" x_b3_traceid:"0a07fc5b86e7ef6a" x_b3_spanid:"0a07fc5b86e7ef6a" x_b3_parentspanid:"-" b3:"0a07fc5b86e7ef6a-0a07fc5b86e7ef6a"
+   2019-10-31T23:19:36.81+0800 [RTR/9] OUT 
+   2019-10-31T23:19:36.89+0800 [APP/PROC/WEB/0] OUT 15:19:36 nginx   | 2019/10/31 15:19:36 [error] 95#0: *55 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'DB_NAME' (T_STRING), expecting ',' or ')' in /home/vcap/app/WEBDIR/config.php on line 13" while reading response header from upstream, client: 39.190.214.105, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/tmp/php-fpm.socket:", host: "tieba-cloud-sign.us-south.cf.appdomain.cloud", referrer: "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5"
+   2019-10-31T23:19:36.89+0800 [APP/PROC/WEB/0] OUT 15:19:36 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:36 +0000] "GET /index.php HTTP/1.1" 500 5 vcap_request_id=5efd778d-2af7-4ce6-5b54-3207c8ac623e
+   2019-10-31T23:19:37.68+0800 [RTR/25] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:37.671+0000] "GET /index.php HTTP/1.1" 500 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:42217" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"66e0fbe1-8f66-4535-4985-f6b0540f08c1" response_time:0.014004217 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb893beb6c71" true_client_ip:"-" x_b3_traceid:"6a41fe825d3e2026" x_b3_spanid:"6a41fe825d3e2026" x_b3_parentspanid:"-" b3:"6a41fe825d3e2026-6a41fe825d3e2026"
+   2019-10-31T23:19:37.68+0800 [RTR/25] OUT 
+   2019-10-31T23:19:37.76+0800 [APP/PROC/WEB/0] OUT 15:19:37 nginx   | 2019/10/31 15:19:37 [error] 95#0: *62 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'DB_NAME' (T_STRING), expecting ',' or ')' in /home/vcap/app/WEBDIR/config.php on line 13" while reading response header from upstream, client: 39.190.214.105, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/tmp/php-fpm.socket:", host: "tieba-cloud-sign.us-south.cf.appdomain.cloud", referrer: "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5"
+   2019-10-31T23:19:37.76+0800 [APP/PROC/WEB/0] OUT 15:19:37 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:37 +0000] "GET /index.php HTTP/1.1" 500 5 vcap_request_id=66e0fbe1-8f66-4535-4985-f6b0540f08c1
+   2019-10-31T23:19:38.54+0800 [RTR/11] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:38.540+0000] "GET /index.php HTTP/1.1" 500 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:50657" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"72f6c73f-0eac-4023-49df-5f00898e1819" response_time:0.008720477 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb8a3beb7091" true_client_ip:"-" x_b3_traceid:"2f63b0eba730c23c" x_b3_spanid:"2f63b0eba730c23c" x_b3_parentspanid:"-" b3:"2f63b0eba730c23c-2f63b0eba730c23c"
+   2019-10-31T23:19:38.54+0800 [RTR/11] OUT 
+   2019-10-31T23:19:38.57+0800 [APP/PROC/WEB/0] OUT 15:19:38 nginx   | 2019/10/31 15:19:38 [error] 95#0: *59 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'DB_NAME' (T_STRING), expecting ',' or ')' in /home/vcap/app/WEBDIR/config.php on line 13" while reading response header from upstream, client: 39.190.214.105, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/tmp/php-fpm.socket:", host: "tieba-cloud-sign.us-south.cf.appdomain.cloud", referrer: "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5"
+   2019-10-31T23:19:38.57+0800 [APP/PROC/WEB/0] OUT 15:19:38 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:38 +0000] "GET /index.php HTTP/1.1" 500 5 vcap_request_id=72f6c73f-0eac-4023-49df-5f00898e1819
+   2019-10-31T23:19:39.35+0800 [RTR/12] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:39.316+0000] "GET /index.php HTTP/1.1" 500 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:55898" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"41b1a735-beef-43c1-7ab6-34778e530c2a" response_time:0.034126714 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb8b4914c9e9" true_client_ip:"-" x_b3_traceid:"38ef6db68318536a" x_b3_spanid:"38ef6db68318536a" x_b3_parentspanid:"-" b3:"38ef6db68318536a-38ef6db68318536a"
+   2019-10-31T23:19:39.35+0800 [RTR/12] OUT 
+   2019-10-31T23:19:39.41+0800 [APP/PROC/WEB/0] OUT 15:19:39 nginx   | 2019/10/31 15:19:39 [error] 95#0: *65 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'DB_NAME' (T_STRING), expecting ',' or ')' in /home/vcap/app/WEBDIR/config.php on line 13" while reading response header from upstream, client: 39.190.214.105, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/tmp/php-fpm.socket:", host: "tieba-cloud-sign.us-south.cf.appdomain.cloud", referrer: "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5"
+   2019-10-31T23:19:39.41+0800 [APP/PROC/WEB/0] OUT 15:19:39 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:39 +0000] "GET /index.php HTTP/1.1" 500 5 vcap_request_id=41b1a735-beef-43c1-7ab6-34778e530c2a
+   2019-10-31T23:19:40.25+0800 [RTR/21] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:40.243+0000] "GET /index.php HTTP/1.1" 500 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:46895" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"b80d8893-7b28-4c40-5a95-b9a908dc89e0" response_time:0.00608582 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb8c905f0307" true_client_ip:"-" x_b3_traceid:"f7abf0be6be1db48" x_b3_spanid:"f7abf0be6be1db48" x_b3_parentspanid:"-" b3:"f7abf0be6be1db48-f7abf0be6be1db48"
+   2019-10-31T23:19:40.25+0800 [RTR/21] OUT 
+   2019-10-31T23:19:40.35+0800 [APP/PROC/WEB/0] OUT 15:19:40 nginx   | 2019/10/31 15:19:40 [error] 95#0: *53 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'DB_NAME' (T_STRING), expecting ',' or ')' in /home/vcap/app/WEBDIR/config.php on line 13" while reading response header from upstream, client: 39.190.214.105, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/tmp/php-fpm.socket:", host: "tieba-cloud-sign.us-south.cf.appdomain.cloud", referrer: "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5"
+   2019-10-31T23:19:40.35+0800 [APP/PROC/WEB/0] OUT 15:19:40 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:40 +0000] "GET /index.php HTTP/1.1" 500 5 vcap_request_id=b80d8893-7b28-4c40-5a95-b9a908dc89e0
+   2019-10-31T23:19:41.12+0800 [RTR/16] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:41.110+0000] "GET /index.php HTTP/1.1" 500 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:20976" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"9ad7082a-ee16-44ab-76fe-c9351cec8ab9" response_time:0.017035363 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb8d905f0cb7" true_client_ip:"-" x_b3_traceid:"91a14096f5108c3e" x_b3_spanid:"91a14096f5108c3e" x_b3_parentspanid:"-" b3:"91a14096f5108c3e-91a14096f5108c3e"
+   2019-10-31T23:19:41.12+0800 [RTR/16] OUT 
+   2019-10-31T23:19:41.16+0800 [APP/PROC/WEB/0] OUT 15:19:41 nginx   | 2019/10/31 15:19:41 [error] 95#0: *68 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'DB_NAME' (T_STRING), expecting ',' or ')' in /home/vcap/app/WEBDIR/config.php on line 13" while reading response header from upstream, client: 39.190.214.105, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/tmp/php-fpm.socket:", host: "tieba-cloud-sign.us-south.cf.appdomain.cloud", referrer: "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5"
+   2019-10-31T23:19:41.16+0800 [APP/PROC/WEB/0] OUT 15:19:41 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:41 +0000] "GET /index.php HTTP/1.1" 500 5 vcap_request_id=9ad7082a-ee16-44ab-76fe-c9351cec8ab9
+   2019-10-31T23:19:41.92+0800 [RTR/6] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:41.893+0000] "GET /index.php HTTP/1.1" 500 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:40315" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"a67d1bb8-6e44-4ab1-4abc-7b7dcdb22043" response_time:0.027408928 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb8dd593c90f" true_client_ip:"-" x_b3_traceid:"a8454199153e477e" x_b3_spanid:"a8454199153e477e" x_b3_parentspanid:"-" b3:"a8454199153e477e-a8454199153e477e"
+   2019-10-31T23:19:41.92+0800 [RTR/6] OUT 
+   2019-10-31T23:19:41.93+0800 [APP/PROC/WEB/0] OUT 15:19:41 nginx   | 2019/10/31 15:19:41 [error] 95#0: *70 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'DB_NAME' (T_STRING), expecting ',' or ')' in /home/vcap/app/WEBDIR/config.php on line 13" while reading response header from upstream, client: 39.190.214.105, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/tmp/php-fpm.socket:", host: "tieba-cloud-sign.us-south.cf.appdomain.cloud", referrer: "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5"
+   2019-10-31T23:19:41.93+0800 [APP/PROC/WEB/0] OUT 15:19:41 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:41 +0000] "GET /index.php HTTP/1.1" 500 5 vcap_request_id=a67d1bb8-6e44-4ab1-4abc-7b7dcdb22043
+   2019-10-31T23:19:42.76+0800 [APP/PROC/WEB/0] OUT 15:19:42 nginx   | 2019/10/31 15:19:42 [error] 95#0: *72 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'DB_NAME' (T_STRING), expecting ',' or ')' in /home/vcap/app/WEBDIR/config.php on line 13" while reading response header from upstream, client: 39.190.214.105, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://unix:/tmp/php-fpm.socket:", host: "tieba-cloud-sign.us-south.cf.appdomain.cloud", referrer: "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5"
+   2019-10-31T23:19:42.76+0800 [APP/PROC/WEB/0] OUT 15:19:42 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:42 +0000] "GET /index.php HTTP/1.1" 500 5 vcap_request_id=afffffcb-da55-4c44-4699-d0a84e4827dc
+   2019-10-31T23:19:42.76+0800 [RTR/8] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:42.745+0000] "GET /index.php HTTP/1.1" 500 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=5" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:19189" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"afffffcb-da55-4c44-4699-d0a84e4827dc" response_time:0.021913759 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb8e8e64e30d" true_client_ip:"-" x_b3_traceid:"94f3f2c8f5a9e531" x_b3_spanid:"94f3f2c8f5a9e531" x_b3_parentspanid:"-" b3:"94f3f2c8f5a9e531-94f3f2c8f5a9e531"
+   2019-10-31T23:19:42.76+0800 [RTR/8] OUT 
+   2019-10-31T23:19:49.27+0800 [RTR/6] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:19:49.267+0000] "GET / HTTP/1.1" 500 0 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.125:38365" "169.46.120.118:61092" x_forwarded_for:"39.190.214.105, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"6d8ac94f-05fb-40eb-459b-7dcabdfde8ea" response_time:0.003026425 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"5c3f3acf5dbafb95d697af73" true_client_ip:"-" x_b3_traceid:"eae58a82969ebbe3" x_b3_spanid:"eae58a82969ebbe3" x_b3_parentspanid:"-" b3:"eae58a82969ebbe3-eae58a82969ebbe3"
+   2019-10-31T23:19:49.27+0800 [RTR/6] OUT 
+   2019-10-31T23:19:49.28+0800 [APP/PROC/WEB/0] OUT 15:19:49 nginx   | 2019/10/31 15:19:49 [error] 95#0: *70 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'DB_NAME' (T_STRING), expecting ',' or ')' in /home/vcap/app/WEBDIR/config.php on line 13" while reading response header from upstream, client: 39.190.214.105, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/tmp/php-fpm.socket:", host: "tieba-cloud-sign.us-south.cf.appdomain.cloud"
+   2019-10-31T23:19:49.29+0800 [APP/PROC/WEB/0] OUT 15:19:49 nginx   | 39.190.214.105 - - [31/Oct/2019:15:19:49 +0000] "GET / HTTP/1.1" 500 5 vcap_request_id=6d8ac94f-05fb-40eb-459b-7dcabdfde8ea
+   2019-10-31T23:24:21.97+0800 [API/4] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-10-31T23:24:27.08+0800 [API/8] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:24:36.76+0800 [API/17] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STOPPED"})
+   2019-10-31T23:24:36.79+0800 [CELL/0] OUT Cell f71771c8-03b7-4906-92f9-13dcfff4eab8 stopping instance ecec8ae5-44a4-47d9-4516-d318
+   2019-10-31T23:24:38.06+0800 [API/4] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:24:38.65+0800 [API/4] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-10-31T23:24:39.22+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-10-31T23:24:39.29+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-10-31T23:24:39.29+0800 [STG/0] OUT Cell ecaecdea-ca33-48e8-baa0-cf1e9f711177 creating container for instance 3ad7fdba-31f3-4248-8ef9-ac74fd6cfa84
+   2019-10-31T23:24:40.85+0800 [STG/0] OUT Cell ecaecdea-ca33-48e8-baa0-cf1e9f711177 successfully created container for instance 3ad7fdba-31f3-4248-8ef9-ac74fd6cfa84
+   2019-10-31T23:24:41.31+0800 [STG/0] OUT Downloading app package...
+   2019-10-31T23:24:41.31+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-10-31T23:24:41.42+0800 [STG/0] OUT Downloaded build artifacts cache (227B)
+   2019-10-31T23:24:41.49+0800 [STG/0] OUT Downloaded app package (363K)
+   2019-10-31T23:24:41.90+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-10-31T23:24:42.23+0800 [CELL/SSHD/0] OUT Exit status 0
+   2019-10-31T23:24:42.36+0800 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-10-31T23:24:42.80+0800 [CELL/0] OUT Cell f71771c8-03b7-4906-92f9-13dcfff4eab8 destroying container for instance ecec8ae5-44a4-47d9-4516-d318
+   2019-10-31T23:24:43.03+0800 [STG/0] OUT Installing Nginx
+   2019-10-31T23:24:43.08+0800 [PROXY/0] OUT Exit status 137
+   2019-10-31T23:24:43.75+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-10-31T23:24:44.04+0800 [STG/0] OUT NGINX 1.15.12
+   2019-10-31T23:24:44.04+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-10-31T23:24:44.04+0800 [STG/0] OUT Installing PHP
+   2019-10-31T23:24:44.04+0800 [STG/0] OUT PHP 7.2.19
+   2019-10-31T23:24:44.31+0800 [CELL/0] OUT Cell f71771c8-03b7-4906-92f9-13dcfff4eab8 successfully destroyed container for instance ecec8ae5-44a4-47d9-4516-d318
+   2019-10-31T23:24:45.35+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/php/php7-7.2.19-linux-x64-cflinuxfs3-d7995d10.tgz] to [/tmp]
+   2019-10-31T23:24:49.64+0800 [STG/0] OUT Finished: [2019-10-31 15:24:49.643178]
+   2019-10-31T23:25:14.66+0800 [STG/0] OUT Exit status 0
+   2019-10-31T23:25:14.66+0800 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-10-31T23:25:14.66+0800 [STG/0] OUT Uploading droplet...
+   2019-10-31T23:25:14.66+0800 [STG/0] OUT Uploading build artifacts cache...
+   2019-10-31T23:25:14.84+0800 [STG/0] OUT Uploaded build artifacts cache (227B)
+   2019-10-31T23:25:16.24+0800 [API/19] OUT Creating droplet for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:25:20.73+0800 [STG/0] OUT Uploaded droplet (75.6M)
+   2019-10-31T23:25:20.75+0800 [STG/0] OUT Uploading complete
+   2019-10-31T23:25:21.12+0800 [STG/0] OUT Cell ecaecdea-ca33-48e8-baa0-cf1e9f711177 stopping instance 3ad7fdba-31f3-4248-8ef9-ac74fd6cfa84
+   2019-10-31T23:25:21.12+0800 [STG/0] OUT Cell ecaecdea-ca33-48e8-baa0-cf1e9f711177 destroying container for instance 3ad7fdba-31f3-4248-8ef9-ac74fd6cfa84
+   2019-10-31T23:25:22.26+0800 [CELL/0] OUT Cell e30f2fdf-6d6b-4101-b3fd-f7fc02247208 creating container for instance a71890bd-b48b-4e53-5169-b3a7
+   2019-10-31T23:25:22.66+0800 [STG/0] OUT Cell ecaecdea-ca33-48e8-baa0-cf1e9f711177 successfully destroyed container for instance 3ad7fdba-31f3-4248-8ef9-ac74fd6cfa84
+   2019-10-31T23:25:23.91+0800 [CELL/0] OUT Cell e30f2fdf-6d6b-4101-b3fd-f7fc02247208 successfully created container for instance a71890bd-b48b-4e53-5169-b3a7
+   2019-10-31T23:25:24.05+0800 [CELL/0] OUT Downloading droplet...
+   2019-10-31T23:25:29.54+0800 [CELL/0] OUT Downloaded droplet (75.6M)
+   2019-10-31T23:25:29.54+0800 [CELL/0] OUT Starting health monitoring of container
+   2019-10-31T23:25:33.00+0800 [APP/PROC/WEB/0] OUT 15:25:33 nginx   | 2019/10/31 15:25:32 [notice] 96#0: using the "epoll" event method
+   2019-10-31T23:25:33.00+0800 [APP/PROC/WEB/0] OUT 15:25:33 nginx   | 2019/10/31 15:25:32 [notice] 96#0: nginx/1.15.12
+   2019-10-31T23:25:33.00+0800 [APP/PROC/WEB/0] OUT 15:25:33 nginx   | 2019/10/31 15:25:32 [notice] 96#0: built by gcc 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+   2019-10-31T23:25:33.00+0800 [APP/PROC/WEB/0] OUT 15:25:33 nginx   | 2019/10/31 15:25:32 [notice] 96#0: OS: Linux 4.15.0-60-generic
+   2019-10-31T23:25:33.00+0800 [APP/PROC/WEB/0] OUT 15:25:33 nginx   | 2019/10/31 15:25:32 [notice] 96#0: getrlimit(RLIMIT_NOFILE): 16384:16384
+   2019-10-31T23:25:33.00+0800 [APP/PROC/WEB/0] OUT 15:25:33 nginx   | 2019/10/31 15:25:32 [notice] 96#0: start worker processes
+   2019-10-31T23:25:33.00+0800 [APP/PROC/WEB/0] OUT 15:25:33 nginx   | 2019/10/31 15:25:32 [notice] 96#0: start worker process 98
+   2019-10-31T23:25:33.00+0800 [APP/PROC/WEB/0] OUT 15:25:33 nginx   | 2019/10/31 15:25:32 [notice] 96#0: start worker process 99
+   2019-10-31T23:25:33.00+0800 [APP/PROC/WEB/0] OUT 15:25:33 nginx   | 2019/10/31 15:25:32 [notice] 96#0: start worker process 100
+   2019-10-31T23:25:33.00+0800 [APP/PROC/WEB/0] OUT 15:25:33 nginx   | 2019/10/31 15:25:32 [notice] 96#0: start worker process 101
+   2019-10-31T23:25:33.22+0800 [APP/PROC/WEB/0] OUT 15:25:33 php-fpm | [31-Oct-2019 15:25:33] NOTICE: fpm is running, pid 103
+   2019-10-31T23:25:33.22+0800 [APP/PROC/WEB/0] OUT 15:25:33 php-fpm | [31-Oct-2019 15:25:33] NOTICE: ready to handle connections
+   2019-10-31T23:25:33.83+0800 [CELL/0] OUT Container became healthy
+   2019-10-31T23:26:38.45+0800 [RTR/21] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:26:38.435+0000] "GET / HTTP/1.1" 200 0 4906 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.34:21229" "169.46.108.46:61190" x_forwarded_for:"39.190.214.105, 10.186.136.34" x_forwarded_proto:"https" vcap_request_id:"1c393d78-014d-40dd-6623-900e77fc7995" response_time:0.02405939 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"9f474cea5dbafd2e2a71264d" true_client_ip:"-" x_b3_traceid:"618607d3a3d45c93" x_b3_spanid:"618607d3a3d45c93" x_b3_parentspanid:"-" b3:"618607d3a3d45c93-618607d3a3d45c93"
+   2019-10-31T23:26:38.45+0800 [RTR/21] OUT 
+   2019-10-31T23:26:38.54+0800 [APP/PROC/WEB/0] OUT 15:26:38 nginx   | 39.190.214.105 - - [31/Oct/2019:15:26:38 +0000] "GET / HTTP/1.1" 200 4919 vcap_request_id=1c393d78-014d-40dd-6623-900e77fc7995
+   2019-10-31T23:26:40.11+0800 [RTR/21] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:26:40.104+0000] "GET /favicon.ico HTTP/1.1" 200 0 15086 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.34:52372" "169.46.108.46:61190" x_forwarded_for:"39.190.214.105, 10.186.136.34" x_forwarded_proto:"https" vcap_request_id:"cbd77bf1-e92b-4389-72f1-78718947be65" response_time:0.007880196 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"9f474cea5dbafd30e57d9d77" true_client_ip:"-" x_b3_traceid:"0266dc50f96cca1b" x_b3_spanid:"0266dc50f96cca1b" x_b3_parentspanid:"-" b3:"0266dc50f96cca1b-0266dc50f96cca1b"
+   2019-10-31T23:26:40.11+0800 [RTR/21] OUT 
+   2019-10-31T23:26:40.19+0800 [APP/PROC/WEB/0] OUT 15:26:40 nginx   | 39.190.214.105 - - [31/Oct/2019:15:26:40 +0000] "GET /favicon.ico HTTP/1.1" 200 15086 vcap_request_id=cbd77bf1-e92b-4389-72f1-78718947be65
+   2019-10-31T23:27:37.01+0800 [API/22] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-10-31T23:27:38.78+0800 [API/19] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:27:50.39+0800 [CELL/0] OUT Cell e30f2fdf-6d6b-4101-b3fd-f7fc02247208 stopping instance a71890bd-b48b-4e53-5169-b3a7
+   2019-10-31T23:27:50.49+0800 [API/19] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STOPPED"})
+   2019-10-31T23:27:51.44+0800 [API/2] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:27:52.00+0800 [API/2] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-10-31T23:27:52.62+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-10-31T23:27:52.71+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-10-31T23:27:52.71+0800 [STG/0] OUT Cell c29eaed3-e436-4e41-a5ae-085803aea921 creating container for instance 1b05ed92-c940-4f50-b830-aa448ec43edf
+   2019-10-31T23:27:54.18+0800 [STG/0] OUT Cell c29eaed3-e436-4e41-a5ae-085803aea921 successfully created container for instance 1b05ed92-c940-4f50-b830-aa448ec43edf
+   2019-10-31T23:27:54.64+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-10-31T23:27:54.64+0800 [STG/0] OUT Downloading app package...
+   2019-10-31T23:27:54.77+0800 [STG/0] OUT Downloaded build artifacts cache (227B)
+   2019-10-31T23:27:54.83+0800 [STG/0] OUT Downloaded app package (363.1K)
+   2019-10-31T23:27:55.54+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-10-31T23:27:55.79+0800 [CELL/SSHD/0] OUT Exit status 0
+   2019-10-31T23:27:55.88+0800 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-10-31T23:27:56.14+0800 [CELL/0] OUT Cell e30f2fdf-6d6b-4101-b3fd-f7fc02247208 destroying container for instance a71890bd-b48b-4e53-5169-b3a7
+   2019-10-31T23:27:56.49+0800 [PROXY/0] OUT Exit status 137
+   2019-10-31T23:27:57.40+0800 [STG/0] OUT Installing Nginx
+   2019-10-31T23:27:57.67+0800 [CELL/0] OUT Cell e30f2fdf-6d6b-4101-b3fd-f7fc02247208 successfully destroyed container for instance a71890bd-b48b-4e53-5169-b3a7
+   2019-10-31T23:27:58.05+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-10-31T23:27:58.43+0800 [STG/0] OUT NGINX 1.15.12
+   2019-10-31T23:27:58.43+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-10-31T23:27:58.43+0800 [STG/0] OUT Installing PHP
+   2019-10-31T23:27:58.43+0800 [STG/0] OUT PHP 7.2.19
+   2019-10-31T23:27:59.92+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/php/php7-7.2.19-linux-x64-cflinuxfs3-d7995d10.tgz] to [/tmp]
+   2019-10-31T23:28:05.02+0800 [STG/0] OUT Finished: [2019-10-31 15:28:05.022042]
+   2019-10-31T23:28:25.98+0800 [STG/0] OUT Exit status 0
+   2019-10-31T23:28:25.98+0800 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-10-31T23:28:25.98+0800 [STG/0] OUT Uploading build artifacts cache...
+   2019-10-31T23:28:25.98+0800 [STG/0] OUT Uploading droplet...
+   2019-10-31T23:28:26.17+0800 [STG/0] OUT Uploaded build artifacts cache (229B)
+   2019-10-31T23:28:27.54+0800 [API/22] OUT Creating droplet for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:28:34.89+0800 [STG/0] OUT Uploaded droplet (75.6M)
+   2019-10-31T23:28:34.92+0800 [STG/0] OUT Uploading complete
+   2019-10-31T23:28:35.33+0800 [STG/0] OUT Cell c29eaed3-e436-4e41-a5ae-085803aea921 stopping instance 1b05ed92-c940-4f50-b830-aa448ec43edf
+   2019-10-31T23:28:35.33+0800 [STG/0] OUT Cell c29eaed3-e436-4e41-a5ae-085803aea921 destroying container for instance 1b05ed92-c940-4f50-b830-aa448ec43edf
+   2019-10-31T23:28:36.44+0800 [STG/0] OUT Cell c29eaed3-e436-4e41-a5ae-085803aea921 successfully destroyed container for instance 1b05ed92-c940-4f50-b830-aa448ec43edf
+   2019-10-31T23:28:36.66+0800 [CELL/0] OUT Cell aaf79ca9-350b-4124-b092-a4987b45fd1b creating container for instance faf144fd-8bc3-49b3-7aa7-28e2
+   2019-10-31T23:28:38.00+0800 [CELL/0] OUT Cell aaf79ca9-350b-4124-b092-a4987b45fd1b successfully created container for instance faf144fd-8bc3-49b3-7aa7-28e2
+   2019-10-31T23:28:38.49+0800 [CELL/0] OUT Downloading droplet...
+   2019-10-31T23:28:44.21+0800 [CELL/0] OUT Downloaded droplet (75.6M)
+   2019-10-31T23:28:44.21+0800 [CELL/0] OUT Starting health monitoring of container
+   2019-10-31T23:28:46.16+0800 [APP/PROC/WEB/0] OUT 15:28:46 nginx   | 2019/10/31 15:28:46 [notice] 94#0: using the "epoll" event method
+   2019-10-31T23:28:46.16+0800 [APP/PROC/WEB/0] OUT 15:28:46 nginx   | 2019/10/31 15:28:46 [notice] 94#0: nginx/1.15.12
+   2019-10-31T23:28:46.16+0800 [APP/PROC/WEB/0] OUT 15:28:46 nginx   | 2019/10/31 15:28:46 [notice] 94#0: built by gcc 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+   2019-10-31T23:28:46.16+0800 [APP/PROC/WEB/0] OUT 15:28:46 nginx   | 2019/10/31 15:28:46 [notice] 94#0: OS: Linux 4.15.0-60-generic
+   2019-10-31T23:28:46.16+0800 [APP/PROC/WEB/0] OUT 15:28:46 nginx   | 2019/10/31 15:28:46 [notice] 94#0: getrlimit(RLIMIT_NOFILE): 16384:16384
+   2019-10-31T23:28:46.16+0800 [APP/PROC/WEB/0] OUT 15:28:46 nginx   | 2019/10/31 15:28:46 [notice] 94#0: start worker processes
+   2019-10-31T23:28:46.16+0800 [APP/PROC/WEB/0] OUT 15:28:46 nginx   | 2019/10/31 15:28:46 [notice] 94#0: start worker process 95
+   2019-10-31T23:28:46.16+0800 [APP/PROC/WEB/0] OUT 15:28:46 nginx   | 2019/10/31 15:28:46 [notice] 94#0: start worker process 96
+   2019-10-31T23:28:46.16+0800 [APP/PROC/WEB/0] OUT 15:28:46 nginx   | 2019/10/31 15:28:46 [notice] 94#0: start worker process 97
+   2019-10-31T23:28:46.16+0800 [APP/PROC/WEB/0] OUT 15:28:46 nginx   | 2019/10/31 15:28:46 [notice] 94#0: start worker process 98
+   2019-10-31T23:28:46.33+0800 [APP/PROC/WEB/0] OUT 15:28:46 php-fpm | [31-Oct-2019 15:28:46] NOTICE: fpm is running, pid 101
+   2019-10-31T23:28:46.33+0800 [APP/PROC/WEB/0] OUT 15:28:46 php-fpm | [31-Oct-2019 15:28:46] NOTICE: ready to handle connections
+   2019-10-31T23:28:48.19+0800 [CELL/0] OUT Container became healthy
+   2019-10-31T23:29:07.58+0800 [RTR/14] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:29:06.914+0000] "GET / HTTP/1.1" 200 0 4503 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.37:25006" "169.62.171.246:61110" x_forwarded_for:"39.190.214.105, 10.186.136.37" x_forwarded_proto:"https" vcap_request_id:"b42ae19c-6414-42a1-7626-712a225b2668" response_time:0.66567947 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"6d6595795dbafdc27b7e269d" true_client_ip:"-" x_b3_traceid:"c20f3909e9d14ed1" x_b3_spanid:"c20f3909e9d14ed1" x_b3_parentspanid:"-" b3:"c20f3909e9d14ed1-c20f3909e9d14ed1"
+   2019-10-31T23:29:07.58+0800 [RTR/14] OUT 
+   2019-10-31T23:29:07.64+0800 [APP/PROC/WEB/0] OUT 15:29:07 nginx   | 39.190.214.105 - - [31/Oct/2019:15:29:07 +0000] "GET / HTTP/1.1" 200 4516 vcap_request_id=b42ae19c-6414-42a1-7626-712a225b2668
+   2019-10-31T23:29:08.22+0800 [RTR/14] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:29:08.222+0000] "GET /favicon.ico HTTP/1.1" 200 0 15086 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.37:19534" "169.62.171.246:61110" x_forwarded_for:"39.190.214.105, 10.186.136.37" x_forwarded_proto:"https" vcap_request_id:"ea0b7e25-7ab0-40dc-6b71-a5a2661ded89" response_time:0.00191268 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"6d6595795dbafdc4a2595d73" true_client_ip:"-" x_b3_traceid:"e0b45b53e913464c" x_b3_spanid:"e0b45b53e913464c" x_b3_parentspanid:"-" b3:"e0b45b53e913464c-e0b45b53e913464c"
+   2019-10-31T23:29:08.22+0800 [RTR/14] OUT 
+   2019-10-31T23:29:08.31+0800 [APP/PROC/WEB/0] OUT 15:29:08 nginx   | 39.190.214.105 - - [31/Oct/2019:15:29:08 +0000] "GET /favicon.ico HTTP/1.1" 200 15086 vcap_request_id=ea0b7e25-7ab0-40dc-6b71-a5a2661ded89
+   2019-10-31T23:34:02.44+0800 [API/8] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-10-31T23:34:04.50+0800 [API/15] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:34:14.31+0800 [CELL/0] OUT Cell aaf79ca9-350b-4124-b092-a4987b45fd1b stopping instance faf144fd-8bc3-49b3-7aa7-28e2
+   2019-10-31T23:34:14.31+0800 [API/22] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STOPPED"})
+   2019-10-31T23:34:15.15+0800 [API/3] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:34:15.69+0800 [API/3] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-10-31T23:34:16.42+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-10-31T23:34:16.51+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-10-31T23:34:16.51+0800 [STG/0] OUT Cell 75a837e2-326c-4ce6-9146-2abefedb94b0 creating container for instance c6701be4-8433-4c1a-9595-ee18f293ebd6
+   2019-10-31T23:34:18.40+0800 [STG/0] OUT Cell 75a837e2-326c-4ce6-9146-2abefedb94b0 successfully created container for instance c6701be4-8433-4c1a-9595-ee18f293ebd6
+   2019-10-31T23:34:19.08+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-10-31T23:34:19.08+0800 [STG/0] OUT Downloading app package...
+   2019-10-31T23:34:19.27+0800 [STG/0] OUT Downloaded build artifacts cache (229B)
+   2019-10-31T23:34:19.36+0800 [STG/0] OUT Downloaded app package (363.1K)
+   2019-10-31T23:34:19.62+0800 [CELL/SSHD/0] OUT Exit status 0
+   2019-10-31T23:34:19.69+0800 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-10-31T23:34:19.97+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-10-31T23:34:20.26+0800 [CELL/0] OUT Cell aaf79ca9-350b-4124-b092-a4987b45fd1b destroying container for instance faf144fd-8bc3-49b3-7aa7-28e2
+   2019-10-31T23:34:20.54+0800 [PROXY/0] OUT Exit status 137
+   2019-10-31T23:34:21.29+0800 [CELL/0] OUT Cell aaf79ca9-350b-4124-b092-a4987b45fd1b successfully destroyed container for instance faf144fd-8bc3-49b3-7aa7-28e2
+   2019-10-31T23:34:21.36+0800 [STG/0] OUT Installing Nginx
+   2019-10-31T23:34:21.84+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-10-31T23:34:22.12+0800 [STG/0] OUT NGINX 1.15.12
+   2019-10-31T23:34:22.12+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-10-31T23:34:22.12+0800 [STG/0] OUT Installing PHP
+   2019-10-31T23:34:22.12+0800 [STG/0] OUT PHP 7.2.19
+   2019-10-31T23:34:23.86+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/php/php7-7.2.19-linux-x64-cflinuxfs3-d7995d10.tgz] to [/tmp]
+   2019-10-31T23:34:29.20+0800 [STG/0] OUT Finished: [2019-10-31 15:34:29.200150]
+   2019-10-31T23:34:55.21+0800 [STG/0] OUT Exit status 0
+   2019-10-31T23:34:55.21+0800 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-10-31T23:34:55.21+0800 [STG/0] OUT Uploading droplet...
+   2019-10-31T23:34:55.21+0800 [STG/0] OUT Uploading build artifacts cache...
+   2019-10-31T23:34:55.40+0800 [STG/0] OUT Uploaded build artifacts cache (228B)
+   2019-10-31T23:34:56.80+0800 [API/23] OUT Creating droplet for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:35:00.16+0800 [STG/0] OUT Uploaded droplet (75.6M)
+   2019-10-31T23:35:00.18+0800 [STG/0] OUT Uploading complete
+   2019-10-31T23:35:00.64+0800 [STG/0] OUT Cell 75a837e2-326c-4ce6-9146-2abefedb94b0 stopping instance c6701be4-8433-4c1a-9595-ee18f293ebd6
+   2019-10-31T23:35:00.64+0800 [STG/0] OUT Cell 75a837e2-326c-4ce6-9146-2abefedb94b0 destroying container for instance c6701be4-8433-4c1a-9595-ee18f293ebd6
+   2019-10-31T23:35:02.01+0800 [CELL/0] OUT Cell 12e20240-797c-4016-9d3a-15dd98982080 creating container for instance 22681943-145d-4f65-71e5-84cf
+   2019-10-31T23:35:02.80+0800 [STG/0] OUT Cell 75a837e2-326c-4ce6-9146-2abefedb94b0 successfully destroyed container for instance c6701be4-8433-4c1a-9595-ee18f293ebd6
+   2019-10-31T23:35:03.97+0800 [CELL/0] OUT Cell 12e20240-797c-4016-9d3a-15dd98982080 successfully created container for instance 22681943-145d-4f65-71e5-84cf
+   2019-10-31T23:35:04.46+0800 [CELL/0] OUT Downloading droplet...
+   2019-10-31T23:35:10.36+0800 [CELL/0] OUT Downloaded droplet (75.6M)
+   2019-10-31T23:35:10.36+0800 [CELL/0] OUT Starting health monitoring of container
+   2019-10-31T23:35:13.24+0800 [APP/PROC/WEB/0] OUT 15:35:13 nginx   | 2019/10/31 15:35:13 [notice] 101#0: using the "epoll" event method
+   2019-10-31T23:35:13.25+0800 [APP/PROC/WEB/0] OUT 15:35:13 nginx   | 2019/10/31 15:35:13 [notice] 101#0: nginx/1.15.12
+   2019-10-31T23:35:13.25+0800 [APP/PROC/WEB/0] OUT 15:35:13 nginx   | 2019/10/31 15:35:13 [notice] 101#0: built by gcc 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+   2019-10-31T23:35:13.25+0800 [APP/PROC/WEB/0] OUT 15:35:13 nginx   | 2019/10/31 15:35:13 [notice] 101#0: OS: Linux 4.15.0-60-generic
+   2019-10-31T23:35:13.25+0800 [APP/PROC/WEB/0] OUT 15:35:13 nginx   | 2019/10/31 15:35:13 [notice] 101#0: getrlimit(RLIMIT_NOFILE): 16384:16384
+   2019-10-31T23:35:13.25+0800 [APP/PROC/WEB/0] OUT 15:35:13 nginx   | 2019/10/31 15:35:13 [notice] 101#0: start worker processes
+   2019-10-31T23:35:13.25+0800 [APP/PROC/WEB/0] OUT 15:35:13 nginx   | 2019/10/31 15:35:13 [notice] 101#0: start worker process 103
+   2019-10-31T23:35:13.25+0800 [APP/PROC/WEB/0] OUT 15:35:13 nginx   | 2019/10/31 15:35:13 [notice] 101#0: start worker process 104
+   2019-10-31T23:35:13.25+0800 [APP/PROC/WEB/0] OUT 15:35:13 nginx   | 2019/10/31 15:35:13 [notice] 101#0: start worker process 105
+   2019-10-31T23:35:13.25+0800 [APP/PROC/WEB/0] OUT 15:35:13 nginx   | 2019/10/31 15:35:13 [notice] 101#0: start worker process 106
+   2019-10-31T23:35:13.44+0800 [APP/PROC/WEB/0] OUT 15:35:13 php-fpm | [31-Oct-2019 15:35:13] NOTICE: fpm is running, pid 107
+   2019-10-31T23:35:13.44+0800 [APP/PROC/WEB/0] OUT 15:35:13 php-fpm | [31-Oct-2019 15:35:13] NOTICE: ready to handle connections
+   2019-10-31T23:35:14.73+0800 [CELL/0] OUT Container became healthy
+   2019-10-31T23:35:29.47+0800 [RTR/14] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:35:29.441+0000] "GET / HTTP/1.1" 200 0 4487 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.34:46656" "169.47.199.70:61338" x_forwarded_for:"39.190.214.105, 10.186.136.34" x_forwarded_proto:"https" vcap_request_id:"532d450f-7d9a-4512-64a0-313d8707d7b2" response_time:0.035099458 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"9f474cea5dbaff41d1714eef" true_client_ip:"-" x_b3_traceid:"396056437c383ca5" x_b3_spanid:"396056437c383ca5" x_b3_parentspanid:"-" b3:"396056437c383ca5-396056437c383ca5"
+   2019-10-31T23:35:29.47+0800 [RTR/14] OUT 
+   2019-10-31T23:35:29.57+0800 [APP/PROC/WEB/0] OUT 15:35:29 nginx   | 39.190.214.105 - - [31/Oct/2019:15:35:29 +0000] "GET / HTTP/1.1" 200 4500 vcap_request_id=532d450f-7d9a-4512-64a0-313d8707d7b2
+   2019-10-31T23:35:30.02+0800 [RTR/21] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:35:30.000+0000] "GET /favicon.ico HTTP/1.1" 200 0 15086 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.34:33577" "169.47.199.70:61338" x_forwarded_for:"39.190.214.105, 10.186.136.34" x_forwarded_proto:"https" vcap_request_id:"3ccf7828-ef26-41be-7f99-311bc13ab228" response_time:0.02247357 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"9f474cea5dbaff42d171978f" true_client_ip:"-" x_b3_traceid:"a6766e9ae2a3367b" x_b3_spanid:"a6766e9ae2a3367b" x_b3_parentspanid:"-" b3:"a6766e9ae2a3367b-a6766e9ae2a3367b"
+   2019-10-31T23:35:30.02+0800 [RTR/21] OUT 
+   2019-10-31T23:35:30.10+0800 [APP/PROC/WEB/0] OUT 15:35:30 nginx   | 39.190.214.105 - - [31/Oct/2019:15:35:30 +0000] "GET /favicon.ico HTTP/1.1" 200 15086 vcap_request_id=3ccf7828-ef26-41be-7f99-311bc13ab228
+   2019-10-31T23:36:13.05+0800 [API/10] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-10-31T23:36:14.86+0800 [API/16] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:36:21.18+0800 [CELL/0] OUT Cell 12e20240-797c-4016-9d3a-15dd98982080 stopping instance 22681943-145d-4f65-71e5-84cf
+   2019-10-31T23:36:21.18+0800 [API/16] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STOPPED"})
+   2019-10-31T23:36:21.99+0800 [API/8] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:36:22.44+0800 [API/8] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-10-31T23:36:22.70+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-10-31T23:36:22.78+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-10-31T23:36:22.78+0800 [STG/0] OUT Cell 7b959a15-dbc6-45df-b3e9-9a7fdcfa7608 creating container for instance 4f801bea-7dde-43d1-80bf-a8509058a489
+   2019-10-31T23:36:24.11+0800 [STG/0] OUT Cell 7b959a15-dbc6-45df-b3e9-9a7fdcfa7608 successfully created container for instance 4f801bea-7dde-43d1-80bf-a8509058a489
+   2019-10-31T23:36:24.48+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-10-31T23:36:24.48+0800 [STG/0] OUT Downloading app package...
+   2019-10-31T23:36:24.60+0800 [STG/0] OUT Downloaded build artifacts cache (228B)
+   2019-10-31T23:36:24.65+0800 [STG/0] OUT Downloaded app package (363.6K)
+   2019-10-31T23:36:25.06+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-10-31T23:36:26.35+0800 [STG/0] OUT Installing Nginx
+   2019-10-31T23:36:26.48+0800 [CELL/SSHD/0] OUT Exit status 0
+   2019-10-31T23:36:26.57+0800 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-10-31T23:36:26.80+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-10-31T23:36:27.04+0800 [CELL/0] OUT Cell 12e20240-797c-4016-9d3a-15dd98982080 destroying container for instance 22681943-145d-4f65-71e5-84cf
+   2019-10-31T23:36:27.17+0800 [STG/0] OUT NGINX 1.15.12
+   2019-10-31T23:36:27.17+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-10-31T23:36:27.17+0800 [STG/0] OUT Installing PHP
+   2019-10-31T23:36:27.17+0800 [STG/0] OUT PHP 7.2.19
+   2019-10-31T23:36:27.45+0800 [PROXY/0] OUT Exit status 137
+   2019-10-31T23:36:28.33+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/php/php7-7.2.19-linux-x64-cflinuxfs3-d7995d10.tgz] to [/tmp]
+   2019-10-31T23:36:28.77+0800 [CELL/0] OUT Cell 12e20240-797c-4016-9d3a-15dd98982080 successfully destroyed container for instance 22681943-145d-4f65-71e5-84cf
+   2019-10-31T23:36:32.83+0800 [STG/0] OUT Finished: [2019-10-31 15:36:32.835859]
+   2019-10-31T23:36:53.91+0800 [STG/0] OUT Exit status 0
+   2019-10-31T23:36:53.91+0800 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-10-31T23:36:53.92+0800 [STG/0] OUT Uploading droplet...
+   2019-10-31T23:36:53.92+0800 [STG/0] OUT Uploading build artifacts cache...
+   2019-10-31T23:36:54.07+0800 [STG/0] OUT Uploaded build artifacts cache (227B)
+   2019-10-31T23:36:55.43+0800 [API/15] OUT Creating droplet for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:37:02.80+0800 [STG/0] OUT Uploaded droplet (75.6M)
+   2019-10-31T23:37:02.83+0800 [STG/0] OUT Uploading complete
+   2019-10-31T23:37:03.56+0800 [STG/0] OUT Cell 7b959a15-dbc6-45df-b3e9-9a7fdcfa7608 stopping instance 4f801bea-7dde-43d1-80bf-a8509058a489
+   2019-10-31T23:37:03.56+0800 [STG/0] OUT Cell 7b959a15-dbc6-45df-b3e9-9a7fdcfa7608 destroying container for instance 4f801bea-7dde-43d1-80bf-a8509058a489
+   2019-10-31T23:37:04.94+0800 [STG/0] OUT Cell 7b959a15-dbc6-45df-b3e9-9a7fdcfa7608 successfully destroyed container for instance 4f801bea-7dde-43d1-80bf-a8509058a489
+   2019-10-31T23:37:04.95+0800 [CELL/0] OUT Cell 12e20240-797c-4016-9d3a-15dd98982080 creating container for instance d5fbd0e7-29df-4949-5378-14b6
+   2019-10-31T23:37:07.33+0800 [CELL/0] OUT Cell 12e20240-797c-4016-9d3a-15dd98982080 successfully created container for instance d5fbd0e7-29df-4949-5378-14b6
+   2019-10-31T23:37:08.19+0800 [CELL/0] OUT Downloading droplet...
+   2019-10-31T23:37:13.48+0800 [CELL/0] OUT Downloaded droplet (75.6M)
+   2019-10-31T23:37:13.48+0800 [CELL/0] OUT Starting health monitoring of container
+   2019-10-31T23:37:15.87+0800 [APP/PROC/WEB/0] OUT 15:37:15 nginx   | 2019/10/31 15:37:15 [notice] 86#0: using the "epoll" event method
+   2019-10-31T23:37:15.87+0800 [APP/PROC/WEB/0] OUT 15:37:15 nginx   | 2019/10/31 15:37:15 [notice] 86#0: nginx/1.15.12
+   2019-10-31T23:37:15.87+0800 [APP/PROC/WEB/0] OUT 15:37:15 nginx   | 2019/10/31 15:37:15 [notice] 86#0: built by gcc 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+   2019-10-31T23:37:15.87+0800 [APP/PROC/WEB/0] OUT 15:37:15 nginx   | 2019/10/31 15:37:15 [notice] 86#0: OS: Linux 4.15.0-60-generic
+   2019-10-31T23:37:15.87+0800 [APP/PROC/WEB/0] OUT 15:37:15 nginx   | 2019/10/31 15:37:15 [notice] 86#0: getrlimit(RLIMIT_NOFILE): 16384:16384
+   2019-10-31T23:37:15.87+0800 [APP/PROC/WEB/0] OUT 15:37:15 nginx   | 2019/10/31 15:37:15 [notice] 86#0: start worker processes
+   2019-10-31T23:37:15.87+0800 [APP/PROC/WEB/0] OUT 15:37:15 nginx   | 2019/10/31 15:37:15 [notice] 86#0: start worker process 90
+   2019-10-31T23:37:15.87+0800 [APP/PROC/WEB/0] OUT 15:37:15 nginx   | 2019/10/31 15:37:15 [notice] 86#0: start worker process 91
+   2019-10-31T23:37:15.87+0800 [APP/PROC/WEB/0] OUT 15:37:15 nginx   | 2019/10/31 15:37:15 [notice] 86#0: start worker process 92
+   2019-10-31T23:37:15.87+0800 [APP/PROC/WEB/0] OUT 15:37:15 nginx   | 2019/10/31 15:37:15 [notice] 86#0: start worker process 93
+   2019-10-31T23:37:15.89+0800 [APP/PROC/WEB/0] OUT 15:37:15 php-fpm | [31-Oct-2019 15:37:15] NOTICE: PHP message: PHP Warning:  Module 'mysqli' already loaded in Unknown on line 0
+   2019-10-31T23:37:15.99+0800 [APP/PROC/WEB/0] OUT 15:37:15 php-fpm | [31-Oct-2019 15:37:15] NOTICE: fpm is running, pid 88
+   2019-10-31T23:37:15.99+0800 [APP/PROC/WEB/0] OUT 15:37:15 php-fpm | [31-Oct-2019 15:37:15] NOTICE: ready to handle connections
+   2019-10-31T23:37:17.55+0800 [CELL/0] OUT Container became healthy
+   2019-10-31T23:37:35.95+0800 [RTR/20] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:37:35.899+0000] "GET / HTTP/1.1" 200 0 4487 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:55652" "169.47.199.70:61338" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"717a25c4-e03d-41b2-42b5-197188c03a6e" response_time:0.054747572 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbaffbfdc290663" true_client_ip:"-" x_b3_traceid:"895b325e8fd62aaf" x_b3_spanid:"895b325e8fd62aaf" x_b3_parentspanid:"-" b3:"895b325e8fd62aaf-895b325e8fd62aaf"
+   2019-10-31T23:37:35.95+0800 [RTR/20] OUT 
+   2019-10-31T23:37:36.04+0800 [APP/PROC/WEB/0] OUT 15:37:36 nginx   | 39.190.214.105 - - [31/Oct/2019:15:37:36 +0000] "GET / HTTP/1.1" 200 4500 vcap_request_id=717a25c4-e03d-41b2-42b5-197188c03a6e
+   2019-10-31T23:37:36.43+0800 [RTR/27] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:37:36.341+0000] "GET /favicon.ico HTTP/1.1" 200 0 15086 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:39988" "169.47.199.70:61338" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"df01ac3c-72b2-4860-42af-ae70a2b9336c" response_time:0.096277635 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbaffc0f4ddce3f" true_client_ip:"-" x_b3_traceid:"ff8fc73692814244" x_b3_spanid:"ff8fc73692814244" x_b3_parentspanid:"-" b3:"ff8fc73692814244-ff8fc73692814244"
+   2019-10-31T23:37:36.43+0800 [RTR/27] OUT 
+   2019-10-31T23:37:36.53+0800 [APP/PROC/WEB/0] OUT 15:37:36 nginx   | 39.190.214.105 - - [31/Oct/2019:15:37:36 +0000] "GET /favicon.ico HTTP/1.1" 200 15086 vcap_request_id=df01ac3c-72b2-4860-42af-ae70a2b9336c
+   2019-10-31T23:37:55.38+0800 [RTR/23] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:37:54.196+0000] "GET / HTTP/1.1" 200 0 4487 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:30542" "169.47.199.70:61338" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"b32a9c5f-a5ba-4e4e-6e93-6ac9600edc78" response_time:1.188184447 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbaffd21bc8ed81" true_client_ip:"-" x_b3_traceid:"387f7af5bdf83916" x_b3_spanid:"387f7af5bdf83916" x_b3_parentspanid:"-" b3:"387f7af5bdf83916-387f7af5bdf83916"
+   2019-10-31T23:37:55.38+0800 [RTR/23] OUT 
+   2019-10-31T23:37:56.02+0800 [APP/PROC/WEB/0] OUT 15:37:56 nginx   | 39.190.214.105 - - [31/Oct/2019:15:37:55 +0000] "GET / HTTP/1.1" 200 4500 vcap_request_id=b32a9c5f-a5ba-4e4e-6e93-6ac9600edc78
+   2019-10-31T23:37:56.13+0800 [RTR/23] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:37:56.061+0000] "GET /favicon.ico HTTP/1.1" 200 0 15086 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:27274" "169.47.199.70:61338" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"46e3d76f-aef4-45eb-6336-e2b304be6d25" response_time:0.073703879 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbaffd4f4e1325f" true_client_ip:"-" x_b3_traceid:"4cf3a381c573da6c" x_b3_spanid:"4cf3a381c573da6c" x_b3_parentspanid:"-" b3:"4cf3a381c573da6c-4cf3a381c573da6c"
+   2019-10-31T23:37:56.13+0800 [RTR/23] OUT 
+   2019-10-31T23:37:56.20+0800 [APP/PROC/WEB/0] OUT 15:37:56 nginx   | 39.190.214.105 - - [31/Oct/2019:15:37:56 +0000] "GET /favicon.ico HTTP/1.1" 200 15086 vcap_request_id=46e3d76f-aef4-45eb-6336-e2b304be6d25
+   2019-10-31T23:38:45.68+0800 [API/23] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-10-31T23:38:47.59+0800 [API/4] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:38:56.66+0800 [CELL/0] OUT Cell 12e20240-797c-4016-9d3a-15dd98982080 stopping instance d5fbd0e7-29df-4949-5378-14b6
+   2019-10-31T23:38:56.67+0800 [API/12] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STOPPED"})
+   2019-10-31T23:38:57.57+0800 [API/2] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:38:58.14+0800 [API/2] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-10-31T23:38:58.76+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-10-31T23:38:58.85+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-10-31T23:38:58.85+0800 [STG/0] OUT Cell ed6fe0d3-9893-42ed-b611-06d12135ba25 creating container for instance 1393878e-cb05-429d-b09a-565885c58fcb
+   2019-10-31T23:39:00.02+0800 [STG/0] OUT Cell ed6fe0d3-9893-42ed-b611-06d12135ba25 successfully created container for instance 1393878e-cb05-429d-b09a-565885c58fcb
+   2019-10-31T23:39:00.29+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-10-31T23:39:00.29+0800 [STG/0] OUT Downloading app package...
+   2019-10-31T23:39:00.38+0800 [STG/0] OUT Downloaded build artifacts cache (227B)
+   2019-10-31T23:39:00.56+0800 [STG/0] OUT Downloaded app package (363.6K)
+   2019-10-31T23:39:00.94+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-10-31T23:39:02.04+0800 [STG/0] OUT Installing Nginx
+   2019-10-31T23:39:02.12+0800 [CELL/SSHD/0] OUT Exit status 0
+   2019-10-31T23:39:02.27+0800 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-10-31T23:39:02.46+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-10-31T23:39:02.69+0800 [STG/0] OUT NGINX 1.15.12
+   2019-10-31T23:39:02.69+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-10-31T23:39:02.69+0800 [STG/0] OUT Installing PHP
+   2019-10-31T23:39:02.69+0800 [STG/0] OUT PHP 7.2.19
+   2019-10-31T23:39:03.05+0800 [CELL/0] OUT Cell 12e20240-797c-4016-9d3a-15dd98982080 destroying container for instance d5fbd0e7-29df-4949-5378-14b6
+   2019-10-31T23:39:03.34+0800 [PROXY/0] OUT Exit status 137
+   2019-10-31T23:39:03.70+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/php/php7-7.2.19-linux-x64-cflinuxfs3-d7995d10.tgz] to [/tmp]
+   2019-10-31T23:39:07.80+0800 [STG/0] OUT Finished: [2019-10-31 15:39:07.807988]
+   2019-10-31T23:39:08.86+0800 [CELL/0] OUT Cell 12e20240-797c-4016-9d3a-15dd98982080 successfully destroyed container for instance d5fbd0e7-29df-4949-5378-14b6
+   2019-10-31T23:39:29.33+0800 [STG/0] OUT Exit status 0
+   2019-10-31T23:39:29.33+0800 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-10-31T23:39:29.33+0800 [STG/0] OUT Uploading droplet...
+   2019-10-31T23:39:29.33+0800 [STG/0] OUT Uploading build artifacts cache...
+   2019-10-31T23:39:29.46+0800 [STG/0] OUT Uploaded build artifacts cache (227B)
+   2019-10-31T23:39:30.90+0800 [API/18] OUT Creating droplet for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:39:37.29+0800 [STG/0] OUT Uploaded droplet (75.6M)
+   2019-10-31T23:39:37.36+0800 [STG/0] OUT Uploading complete
+   2019-10-31T23:39:37.57+0800 [STG/0] OUT Cell ed6fe0d3-9893-42ed-b611-06d12135ba25 stopping instance 1393878e-cb05-429d-b09a-565885c58fcb
+   2019-10-31T23:39:37.57+0800 [STG/0] OUT Cell ed6fe0d3-9893-42ed-b611-06d12135ba25 destroying container for instance 1393878e-cb05-429d-b09a-565885c58fcb
+   2019-10-31T23:39:38.59+0800 [STG/0] OUT Cell ed6fe0d3-9893-42ed-b611-06d12135ba25 successfully destroyed container for instance 1393878e-cb05-429d-b09a-565885c58fcb
+   2019-10-31T23:39:39.65+0800 [CELL/0] OUT Cell 67c7d355-3453-4f1c-b240-21526e6ebb93 creating container for instance 6fb18211-b5a9-48e7-45a6-ec80
+   2019-10-31T23:39:41.66+0800 [CELL/0] OUT Cell 67c7d355-3453-4f1c-b240-21526e6ebb93 successfully created container for instance 6fb18211-b5a9-48e7-45a6-ec80
+   2019-10-31T23:39:42.14+0800 [CELL/0] OUT Downloading droplet...
+   2019-10-31T23:39:47.71+0800 [CELL/0] OUT Downloaded droplet (75.6M)
+   2019-10-31T23:39:47.71+0800 [CELL/0] OUT Starting health monitoring of container
+   2019-10-31T23:39:49.93+0800 [APP/PROC/WEB/0] OUT 15:39:49 nginx   | 2019/10/31 15:39:49 [notice] 93#0: using the "epoll" event method
+   2019-10-31T23:39:49.93+0800 [APP/PROC/WEB/0] OUT 15:39:49 nginx   | 2019/10/31 15:39:49 [notice] 93#0: nginx/1.15.12
+   2019-10-31T23:39:49.94+0800 [APP/PROC/WEB/0] OUT 15:39:49 nginx   | 2019/10/31 15:39:49 [notice] 93#0: built by gcc 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+   2019-10-31T23:39:49.94+0800 [APP/PROC/WEB/0] OUT 15:39:49 nginx   | 2019/10/31 15:39:49 [notice] 93#0: OS: Linux 4.15.0-60-generic
+   2019-10-31T23:39:49.94+0800 [APP/PROC/WEB/0] OUT 15:39:49 nginx   | 2019/10/31 15:39:49 [notice] 93#0: getrlimit(RLIMIT_NOFILE): 16384:16384
+   2019-10-31T23:39:49.94+0800 [APP/PROC/WEB/0] OUT 15:39:49 nginx   | 2019/10/31 15:39:49 [notice] 93#0: start worker processes
+   2019-10-31T23:39:49.94+0800 [APP/PROC/WEB/0] OUT 15:39:49 nginx   | 2019/10/31 15:39:49 [notice] 93#0: start worker process 94
+   2019-10-31T23:39:49.94+0800 [APP/PROC/WEB/0] OUT 15:39:49 nginx   | 2019/10/31 15:39:49 [notice] 93#0: start worker process 95
+   2019-10-31T23:39:49.94+0800 [APP/PROC/WEB/0] OUT 15:39:49 nginx   | 2019/10/31 15:39:49 [notice] 93#0: start worker process 96
+   2019-10-31T23:39:49.94+0800 [APP/PROC/WEB/0] OUT 15:39:49 nginx   | 2019/10/31 15:39:49 [notice] 93#0: start worker process 97
+   2019-10-31T23:39:49.97+0800 [APP/PROC/WEB/0] OUT 15:39:49 php-fpm | [31-Oct-2019 15:39:49] NOTICE: PHP message: PHP Warning:  Module 'mysqli' already loaded in Unknown on line 0
+   2019-10-31T23:39:50.07+0800 [APP/PROC/WEB/0] OUT 15:39:50 php-fpm | [31-Oct-2019 15:39:50] NOTICE: fpm is running, pid 99
+   2019-10-31T23:39:50.07+0800 [APP/PROC/WEB/0] OUT 15:39:50 php-fpm | [31-Oct-2019 15:39:50] NOTICE: ready to handle connections
+   2019-10-31T23:39:51.86+0800 [CELL/0] OUT Container became healthy
+   2019-10-31T23:40:07.45+0800 [RTR/23] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:40:07.433+0000] "GET / HTTP/1.1" 200 0 4906 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.35:53581" "169.46.105.85:61150" x_forwarded_for:"39.190.214.105, 10.186.136.35" x_forwarded_proto:"https" vcap_request_id:"7c4176f2-7eef-4482-5783-1bf598721bd8" response_time:0.022863201 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"027fcd6f5dbb00576f8f43a1" true_client_ip:"-" x_b3_traceid:"9780c5d5bcd2adca" x_b3_spanid:"9780c5d5bcd2adca" x_b3_parentspanid:"-" b3:"9780c5d5bcd2adca-9780c5d5bcd2adca"
+   2019-10-31T23:40:07.45+0800 [RTR/23] OUT 
+   2019-10-31T23:40:07.53+0800 [APP/PROC/WEB/0] OUT 15:40:07 nginx   | 39.190.214.105 - - [31/Oct/2019:15:40:07 +0000] "GET / HTTP/1.1" 200 4919 vcap_request_id=7c4176f2-7eef-4482-5783-1bf598721bd8
+   2019-10-31T23:40:07.91+0800 [RTR/23] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:40:07.907+0000] "GET /favicon.ico HTTP/1.1" 200 0 15086 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.35:14854" "169.46.105.85:61150" x_forwarded_for:"39.190.214.105, 10.186.136.35" x_forwarded_proto:"https" vcap_request_id:"9ee05dd4-f916-43c9-678c-9013ed680baf" response_time:0.005164063 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"027fcd6f5dbb005778840437" true_client_ip:"-" x_b3_traceid:"133aa4f81b56cf67" x_b3_spanid:"133aa4f81b56cf67" x_b3_parentspanid:"-" b3:"133aa4f81b56cf67-133aa4f81b56cf67"
+   2019-10-31T23:40:07.91+0800 [RTR/23] OUT 
+   2019-10-31T23:40:07.99+0800 [APP/PROC/WEB/0] OUT 15:40:07 nginx   | 39.190.214.105 - - [31/Oct/2019:15:40:07 +0000] "GET /favicon.ico HTTP/1.1" 200 15086 vcap_request_id=9ee05dd4-f916-43c9-678c-9013ed680baf
+   2019-10-31T23:40:09.46+0800 [RTR/14] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:40:09.442+0000] "GET /setup/install.php HTTP/1.1" 200 0 2394 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.35:11513" "169.46.105.85:61150" x_forwarded_for:"39.190.214.105, 10.186.136.35" x_forwarded_proto:"https" vcap_request_id:"977e8c9e-269a-467c-7197-f727f6f4bc5b" response_time:0.022597551 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"027fcd6f5dbb005978840907" true_client_ip:"-" x_b3_traceid:"3abdeca183be88ef" x_b3_spanid:"3abdeca183be88ef" x_b3_parentspanid:"-" b3:"3abdeca183be88ef-3abdeca183be88ef"
+   2019-10-31T23:40:09.46+0800 [RTR/14] OUT 
+   2019-10-31T23:40:09.54+0800 [APP/PROC/WEB/0] OUT 15:40:09 nginx   | 39.190.214.105 - - [31/Oct/2019:15:40:09 +0000] "GET /setup/install.php HTTP/1.1" 200 2406 vcap_request_id=977e8c9e-269a-467c-7197-f727f6f4bc5b
+   2019-10-31T23:40:09.96+0800 [RTR/11] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:40:09.938+0000] "GET /license.html HTTP/1.1" 304 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.35:52549" "169.46.105.85:61150" x_forwarded_for:"39.190.214.105, 10.186.136.35" x_forwarded_proto:"https" vcap_request_id:"f63b79eb-a8e8-4cd3-491a-4a0353202f1d" response_time:0.023480537 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"027fcd6f5dbb00596f8f7881" true_client_ip:"-" x_b3_traceid:"adfc223a599589bf" x_b3_spanid:"adfc223a599589bf" x_b3_parentspanid:"-" b3:"adfc223a599589bf-adfc223a599589bf"
+   2019-10-31T23:40:09.96+0800 [RTR/11] OUT 
+   2019-10-31T23:40:09.97+0800 [APP/PROC/WEB/0] OUT 15:40:09 nginx   | 39.190.214.105 - - [31/Oct/2019:15:40:09 +0000] "GET /license.html HTTP/1.1" 304 0 vcap_request_id=f63b79eb-a8e8-4cd3-491a-4a0353202f1d
+   2019-10-31T23:40:12.55+0800 [RTR/27] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:40:12.505+0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 0 4949 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.35:52431" "169.46.105.85:61150" x_forwarded_for:"39.190.214.105, 10.186.136.35" x_forwarded_proto:"https" vcap_request_id:"7ef18693-d425-4f0a-5f0a-40fb930edd51" response_time:0.04866366 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"027fcd6f5dbb005c78844eb7" true_client_ip:"-" x_b3_traceid:"b2378b1f97e395b0" x_b3_spanid:"b2378b1f97e395b0" x_b3_parentspanid:"-" b3:"b2378b1f97e395b0-b2378b1f97e395b0"
+   2019-10-31T23:40:12.55+0800 [RTR/27] OUT 
+   2019-10-31T23:40:12.67+0800 [APP/PROC/WEB/0] OUT 15:40:12 nginx   | 39.190.214.105 - - [31/Oct/2019:15:40:12 +0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 4962 vcap_request_id=7ef18693-d425-4f0a-5f0a-40fb930edd51
+   2019-10-31T23:42:20.31+0800 [API/5] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-10-31T23:42:23.24+0800 [API/18] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:42:33.41+0800 [CELL/0] OUT Cell 67c7d355-3453-4f1c-b240-21526e6ebb93 stopping instance 6fb18211-b5a9-48e7-45a6-ec80
+   2019-10-31T23:42:33.41+0800 [API/10] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STOPPED"})
+   2019-10-31T23:42:34.22+0800 [API/5] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:42:34.75+0800 [API/5] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-10-31T23:42:35.29+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-10-31T23:42:35.37+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-10-31T23:42:35.37+0800 [STG/0] OUT Cell ac2acdf2-e3fc-4066-b21c-f4da5a2d95d3 creating container for instance e10bf464-f32d-42be-8175-a705aa38d5d9
+   2019-10-31T23:42:37.78+0800 [STG/0] OUT Cell ac2acdf2-e3fc-4066-b21c-f4da5a2d95d3 successfully created container for instance e10bf464-f32d-42be-8175-a705aa38d5d9
+   2019-10-31T23:42:38.37+0800 [STG/0] OUT Downloading app package...
+   2019-10-31T23:42:38.37+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-10-31T23:42:38.50+0800 [STG/0] OUT Downloaded build artifacts cache (227B)
+   2019-10-31T23:42:38.56+0800 [STG/0] OUT Downloaded app package (363.6K)
+   2019-10-31T23:42:38.93+0800 [CELL/SSHD/0] OUT Exit status 0
+   2019-10-31T23:42:39.00+0800 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-10-31T23:42:39.13+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-10-31T23:42:39.22+0800 [CELL/0] OUT Cell 67c7d355-3453-4f1c-b240-21526e6ebb93 destroying container for instance 6fb18211-b5a9-48e7-45a6-ec80
+   2019-10-31T23:42:39.53+0800 [PROXY/0] OUT Exit status 137
+   2019-10-31T23:42:40.63+0800 [STG/0] OUT Installing Nginx
+   2019-10-31T23:42:40.66+0800 [CELL/0] OUT Cell 67c7d355-3453-4f1c-b240-21526e6ebb93 successfully destroyed container for instance 6fb18211-b5a9-48e7-45a6-ec80
+   2019-10-31T23:42:41.37+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-10-31T23:42:41.65+0800 [STG/0] OUT NGINX 1.15.12
+   2019-10-31T23:42:41.65+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-10-31T23:42:41.65+0800 [STG/0] OUT Installing PHP
+   2019-10-31T23:42:41.65+0800 [STG/0] OUT PHP 7.2.19
+   2019-10-31T23:42:44.11+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/php/php7-7.2.19-linux-x64-cflinuxfs3-d7995d10.tgz] to [/tmp]
+   2019-10-31T23:42:48.97+0800 [STG/0] OUT Finished: [2019-10-31 15:42:48.976318]
+   2019-10-31T23:43:11.70+0800 [STG/0] OUT Exit status 0
+   2019-10-31T23:43:11.70+0800 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-10-31T23:43:11.70+0800 [STG/0] OUT Uploading droplet...
+   2019-10-31T23:43:11.70+0800 [STG/0] OUT Uploading build artifacts cache...
+   2019-10-31T23:43:12.37+0800 [STG/0] OUT Uploaded build artifacts cache (226B)
+   2019-10-31T23:43:13.48+0800 [API/12] OUT Creating droplet for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:43:20.95+0800 [STG/0] OUT Uploaded droplet (75.6M)
+   2019-10-31T23:43:20.97+0800 [STG/0] OUT Uploading complete
+   2019-10-31T23:43:21.39+0800 [STG/0] OUT Cell ac2acdf2-e3fc-4066-b21c-f4da5a2d95d3 stopping instance e10bf464-f32d-42be-8175-a705aa38d5d9
+   2019-10-31T23:43:21.39+0800 [STG/0] OUT Cell ac2acdf2-e3fc-4066-b21c-f4da5a2d95d3 destroying container for instance e10bf464-f32d-42be-8175-a705aa38d5d9
+   2019-10-31T23:43:22.66+0800 [CELL/0] OUT Cell 81f5db5f-14c9-4391-beed-6031b24865c8 creating container for instance 700d27e0-825e-4de1-62b5-208b
+   2019-10-31T23:43:22.86+0800 [STG/0] OUT Cell ac2acdf2-e3fc-4066-b21c-f4da5a2d95d3 successfully destroyed container for instance e10bf464-f32d-42be-8175-a705aa38d5d9
+   2019-10-31T23:43:24.41+0800 [CELL/0] OUT Cell 81f5db5f-14c9-4391-beed-6031b24865c8 successfully created container for instance 700d27e0-825e-4de1-62b5-208b
+   2019-10-31T23:43:24.59+0800 [CELL/0] OUT Downloading droplet...
+   2019-10-31T23:43:30.18+0800 [CELL/0] OUT Downloaded droplet (75.6M)
+   2019-10-31T23:43:30.18+0800 [CELL/0] OUT Starting health monitoring of container
+   2019-10-31T23:43:32.54+0800 [APP/PROC/WEB/0] OUT 15:43:32 nginx   | 2019/10/31 15:43:32 [notice] 98#0: using the "epoll" event method
+   2019-10-31T23:43:32.54+0800 [APP/PROC/WEB/0] OUT 15:43:32 nginx   | 2019/10/31 15:43:32 [notice] 98#0: nginx/1.15.12
+   2019-10-31T23:43:32.54+0800 [APP/PROC/WEB/0] OUT 15:43:32 nginx   | 2019/10/31 15:43:32 [notice] 98#0: built by gcc 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+   2019-10-31T23:43:32.54+0800 [APP/PROC/WEB/0] OUT 15:43:32 nginx   | 2019/10/31 15:43:32 [notice] 98#0: OS: Linux 4.15.0-60-generic
+   2019-10-31T23:43:32.54+0800 [APP/PROC/WEB/0] OUT 15:43:32 nginx   | 2019/10/31 15:43:32 [notice] 98#0: getrlimit(RLIMIT_NOFILE): 16384:16384
+   2019-10-31T23:43:32.54+0800 [APP/PROC/WEB/0] OUT 15:43:32 nginx   | 2019/10/31 15:43:32 [notice] 98#0: start worker processes
+   2019-10-31T23:43:32.54+0800 [APP/PROC/WEB/0] OUT 15:43:32 nginx   | 2019/10/31 15:43:32 [notice] 98#0: start worker process 100
+   2019-10-31T23:43:32.54+0800 [APP/PROC/WEB/0] OUT 15:43:32 nginx   | 2019/10/31 15:43:32 [notice] 98#0: start worker process 101
+   2019-10-31T23:43:32.54+0800 [APP/PROC/WEB/0] OUT 15:43:32 nginx   | 2019/10/31 15:43:32 [notice] 98#0: start worker process 102
+   2019-10-31T23:43:32.54+0800 [APP/PROC/WEB/0] OUT 15:43:32 nginx   | 2019/10/31 15:43:32 [notice] 98#0: start worker process 104
+   2019-10-31T23:43:32.66+0800 [APP/PROC/WEB/0] OUT 15:43:32 php-fpm | [31-Oct-2019 15:43:32] NOTICE: fpm is running, pid 99
+   2019-10-31T23:43:32.66+0800 [APP/PROC/WEB/0] OUT 15:43:32 php-fpm | [31-Oct-2019 15:43:32] NOTICE: ready to handle connections
+   2019-10-31T23:43:34.27+0800 [CELL/0] OUT Container became healthy
+   2019-10-31T23:45:01.91+0800 [RTR/23] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:45:01.843+0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 0 4949 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.37:41359" "169.46.101.122:61218" x_forwarded_for:"39.190.214.105, 10.186.136.37" x_forwarded_proto:"https" vcap_request_id:"47c0b6cb-ccf0-40c0-7f38-52a566fd11d0" response_time:0.067548514 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"6d6595795dbb017dad94ef59" true_client_ip:"-" x_b3_traceid:"a221cfdb2bfb0418" x_b3_spanid:"a221cfdb2bfb0418" x_b3_parentspanid:"-" b3:"a221cfdb2bfb0418-a221cfdb2bfb0418"
+   2019-10-31T23:45:01.91+0800 [RTR/23] OUT 
+   2019-10-31T23:45:02.00+0800 [APP/PROC/WEB/0] OUT 15:45:02 nginx   | 39.190.214.105 - - [31/Oct/2019:15:45:01 +0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 4962 vcap_request_id=47c0b6cb-ccf0-40c0-7f38-52a566fd11d0
+   2019-10-31T23:45:03.58+0800 [RTR/23] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:45:03.567+0000] "GET /favicon.ico HTTP/1.1" 200 0 15086 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=1" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.37:41353" "169.46.101.122:61218" x_forwarded_for:"39.190.214.105, 10.186.136.37" x_forwarded_proto:"https" vcap_request_id:"0e4bb5c2-49be-436d-6daa-4f0cfad5e14c" response_time:0.013592279 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"6d6595795dbb017f68b5a187" true_client_ip:"-" x_b3_traceid:"19d1238efefcfa7f" x_b3_spanid:"19d1238efefcfa7f" x_b3_parentspanid:"-" b3:"19d1238efefcfa7f-19d1238efefcfa7f"
+   2019-10-31T23:45:03.58+0800 [RTR/23] OUT 
+   2019-10-31T23:45:03.63+0800 [APP/PROC/WEB/0] OUT 15:45:03 nginx   | 39.190.214.105 - - [31/Oct/2019:15:45:03 +0000] "GET /favicon.ico HTTP/1.1" 200 15086 vcap_request_id=0e4bb5c2-49be-436d-6daa-4f0cfad5e14c
+   2019-10-31T23:45:08.98+0800 [RTR/21] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:45:08.965+0000] "GET / HTTP/1.1" 200 0 4906 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.37:43200" "169.46.101.122:61218" x_forwarded_for:"39.190.214.105, 10.186.136.37" x_forwarded_proto:"https" vcap_request_id:"00b66b47-d827-447e-78a8-fb84c77d10c2" response_time:0.020246539 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"6d6595795dbb0185a5b9fddf" true_client_ip:"-" x_b3_traceid:"281738324a4e5bd0" x_b3_spanid:"281738324a4e5bd0" x_b3_parentspanid:"-" b3:"281738324a4e5bd0-281738324a4e5bd0"
+   2019-10-31T23:45:08.98+0800 [RTR/21] OUT 
+   2019-10-31T23:45:09.07+0800 [APP/PROC/WEB/0] OUT 15:45:09 nginx   | 39.190.214.105 - - [31/Oct/2019:15:45:09 +0000] "GET / HTTP/1.1" 200 4919 vcap_request_id=00b66b47-d827-447e-78a8-fb84c77d10c2
+   2019-10-31T23:45:10.77+0800 [RTR/22] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:45:10.757+0000] "GET /setup/install.php HTTP/1.1" 200 0 2394 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.37:24404" "169.46.101.122:61218" x_forwarded_for:"39.190.214.105, 10.186.136.37" x_forwarded_proto:"https" vcap_request_id:"52e71df7-d042-452e-6c47-618110a299d4" response_time:0.021713432 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"6d6595795dbb0186f99de7e1" true_client_ip:"-" x_b3_traceid:"307f0ee1edef4b92" x_b3_spanid:"307f0ee1edef4b92" x_b3_parentspanid:"-" b3:"307f0ee1edef4b92-307f0ee1edef4b92"
+   2019-10-31T23:45:10.77+0800 [RTR/22] OUT 
+   2019-10-31T23:45:10.89+0800 [APP/PROC/WEB/0] OUT 15:45:10 nginx   | 39.190.214.105 - - [31/Oct/2019:15:45:10 +0000] "GET /setup/install.php HTTP/1.1" 200 2406 vcap_request_id=52e71df7-d042-452e-6c47-618110a299d4
+   2019-10-31T23:45:13.71+0800 [RTR/27] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:45:13.652+0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 0 4949 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.37:19061" "169.46.101.122:61218" x_forwarded_for:"39.190.214.105, 10.186.136.37" x_forwarded_proto:"https" vcap_request_id:"344e340e-63c1-4d5b-5a56-deb5d9d71003" response_time:0.061889109 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"6d6595795dbb0189a5badb7f" true_client_ip:"-" x_b3_traceid:"594a98fa8925b96d" x_b3_spanid:"594a98fa8925b96d" x_b3_parentspanid:"-" b3:"594a98fa8925b96d-594a98fa8925b96d"
+   2019-10-31T23:45:13.71+0800 [RTR/27] OUT 
+   2019-10-31T23:45:13.81+0800 [APP/PROC/WEB/0] OUT 15:45:13 nginx   | 39.190.214.105 - - [31/Oct/2019:15:45:13 +0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 4962 vcap_request_id=344e340e-63c1-4d5b-5a56-deb5d9d71003
+   2019-10-31T23:46:49.43+0800 [API/16] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-10-31T23:46:50.86+0800 [API/20] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:46:57.60+0800 [CELL/0] OUT Cell 81f5db5f-14c9-4391-beed-6031b24865c8 stopping instance 700d27e0-825e-4de1-62b5-208b
+   2019-10-31T23:46:57.68+0800 [API/3] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STOPPED"})
+   2019-10-31T23:46:58.60+0800 [API/10] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:46:59.17+0800 [API/10] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-10-31T23:46:59.88+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-10-31T23:47:00.04+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-10-31T23:47:00.04+0800 [STG/0] OUT Cell 7bdd5f02-26c0-4ab6-954a-d1417afad08b creating container for instance 30774554-835a-4aa3-b6d0-d70a7789ed5c
+   2019-10-31T23:47:02.32+0800 [STG/0] OUT Cell 7bdd5f02-26c0-4ab6-954a-d1417afad08b successfully created container for instance 30774554-835a-4aa3-b6d0-d70a7789ed5c
+   2019-10-31T23:47:02.49+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-10-31T23:47:02.49+0800 [STG/0] OUT Downloading app package...
+   2019-10-31T23:47:02.69+0800 [STG/0] OUT Downloaded build artifacts cache (226B)
+   2019-10-31T23:47:02.73+0800 [STG/0] OUT Downloaded app package (363.6K)
+   2019-10-31T23:47:03.34+0800 [CELL/SSHD/0] OUT Exit status 0
+   2019-10-31T23:47:03.47+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-10-31T23:47:03.51+0800 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-10-31T23:47:03.86+0800 [CELL/0] OUT Cell 81f5db5f-14c9-4391-beed-6031b24865c8 destroying container for instance 700d27e0-825e-4de1-62b5-208b
+   2019-10-31T23:47:04.35+0800 [PROXY/0] OUT Exit status 137
+   2019-10-31T23:47:05.83+0800 [CELL/0] OUT Cell 81f5db5f-14c9-4391-beed-6031b24865c8 successfully destroyed container for instance 700d27e0-825e-4de1-62b5-208b
+   2019-10-31T23:47:05.87+0800 [STG/0] OUT Installing Nginx
+   2019-10-31T23:47:06.39+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-10-31T23:47:06.84+0800 [STG/0] OUT NGINX 1.15.12
+   2019-10-31T23:47:06.84+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-10-31T23:47:06.85+0800 [STG/0] OUT Installing PHP
+   2019-10-31T23:47:06.85+0800 [STG/0] OUT PHP 7.2.19
+   2019-10-31T23:47:08.91+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/php/php7-7.2.19-linux-x64-cflinuxfs3-d7995d10.tgz] to [/tmp]
+   2019-10-31T23:47:12.60+0800 [STG/0] ERR The extension 'apc' is not provided by this buildpack.
+   2019-10-31T23:47:13.44+0800 [STG/0] OUT Finished: [2019-10-31 15:47:13.447048]
+   2019-10-31T23:47:40.19+0800 [STG/0] OUT Exit status 0
+   2019-10-31T23:47:40.19+0800 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-10-31T23:47:40.19+0800 [STG/0] OUT Uploading droplet...
+   2019-10-31T23:47:40.19+0800 [STG/0] OUT Uploading build artifacts cache...
+   2019-10-31T23:47:40.35+0800 [STG/0] OUT Uploaded build artifacts cache (225B)
+   2019-10-31T23:47:41.43+0800 [API/17] OUT Creating droplet for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:47:44.82+0800 [STG/0] OUT Uploaded droplet (75.6M)
+   2019-10-31T23:47:44.84+0800 [STG/0] OUT Uploading complete
+   2019-10-31T23:47:45.12+0800 [STG/0] OUT Cell 7bdd5f02-26c0-4ab6-954a-d1417afad08b stopping instance 30774554-835a-4aa3-b6d0-d70a7789ed5c
+   2019-10-31T23:47:45.12+0800 [STG/0] OUT Cell 7bdd5f02-26c0-4ab6-954a-d1417afad08b destroying container for instance 30774554-835a-4aa3-b6d0-d70a7789ed5c
+   2019-10-31T23:47:46.39+0800 [CELL/0] OUT Cell f68ed9f2-909e-4062-bff5-f822d9179c3d creating container for instance 51479995-59ef-4a21-5ed1-f748
+   2019-10-31T23:47:46.78+0800 [STG/0] OUT Cell 7bdd5f02-26c0-4ab6-954a-d1417afad08b successfully destroyed container for instance 30774554-835a-4aa3-b6d0-d70a7789ed5c
+   2019-10-31T23:47:48.09+0800 [CELL/0] OUT Cell f68ed9f2-909e-4062-bff5-f822d9179c3d successfully created container for instance 51479995-59ef-4a21-5ed1-f748
+   2019-10-31T23:47:48.26+0800 [CELL/0] OUT Downloading droplet...
+   2019-10-31T23:47:54.60+0800 [CELL/0] OUT Downloaded droplet (75.6M)
+   2019-10-31T23:47:54.60+0800 [CELL/0] OUT Starting health monitoring of container
+   2019-10-31T23:47:56.84+0800 [APP/PROC/WEB/0] OUT 15:47:56 nginx   | 2019/10/31 15:47:56 [notice] 98#0: using the "epoll" event method
+   2019-10-31T23:47:56.84+0800 [APP/PROC/WEB/0] OUT 15:47:56 nginx   | 2019/10/31 15:47:56 [notice] 98#0: nginx/1.15.12
+   2019-10-31T23:47:56.84+0800 [APP/PROC/WEB/0] OUT 15:47:56 nginx   | 2019/10/31 15:47:56 [notice] 98#0: built by gcc 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+   2019-10-31T23:47:56.84+0800 [APP/PROC/WEB/0] OUT 15:47:56 nginx   | 2019/10/31 15:47:56 [notice] 98#0: OS: Linux 4.15.0-60-generic
+   2019-10-31T23:47:56.84+0800 [APP/PROC/WEB/0] OUT 15:47:56 nginx   | 2019/10/31 15:47:56 [notice] 98#0: getrlimit(RLIMIT_NOFILE): 16384:16384
+   2019-10-31T23:47:56.84+0800 [APP/PROC/WEB/0] OUT 15:47:56 nginx   | 2019/10/31 15:47:56 [notice] 98#0: start worker processes
+   2019-10-31T23:47:56.84+0800 [APP/PROC/WEB/0] OUT 15:47:56 nginx   | 2019/10/31 15:47:56 [notice] 98#0: start worker process 100
+   2019-10-31T23:47:56.84+0800 [APP/PROC/WEB/0] OUT 15:47:56 nginx   | 2019/10/31 15:47:56 [notice] 98#0: start worker process 101
+   2019-10-31T23:47:56.84+0800 [APP/PROC/WEB/0] OUT 15:47:56 nginx   | 2019/10/31 15:47:56 [notice] 98#0: start worker process 102
+   2019-10-31T23:47:56.84+0800 [APP/PROC/WEB/0] OUT 15:47:56 nginx   | 2019/10/31 15:47:56 [notice] 98#0: start worker process 103
+   2019-10-31T23:47:57.05+0800 [APP/PROC/WEB/0] OUT 15:47:57 php-fpm | [31-Oct-2019 15:47:57] NOTICE: fpm is running, pid 104
+   2019-10-31T23:47:57.05+0800 [APP/PROC/WEB/0] OUT 15:47:57 php-fpm | [31-Oct-2019 15:47:57] NOTICE: ready to handle connections
+   2019-10-31T23:47:58.74+0800 [CELL/0] OUT Container became healthy
+   2019-10-31T23:49:25.68+0800 [RTR/27] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:49:25.654+0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 0 4949 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.34:37986" "169.46.101.101:61232" x_forwarded_for:"39.190.214.105, 10.186.136.34" x_forwarded_proto:"https" vcap_request_id:"fdd370f2-85b4-4fa2-7e0d-70a42a0d47f2" response_time:0.026672789 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"9f474cea5dbb0285d1f31daf" true_client_ip:"-" x_b3_traceid:"c4642ad4fc3eda70" x_b3_spanid:"c4642ad4fc3eda70" x_b3_parentspanid:"-" b3:"c4642ad4fc3eda70-c4642ad4fc3eda70"
+   2019-10-31T23:49:25.68+0800 [RTR/27] OUT 
+   2019-10-31T23:49:25.74+0800 [APP/PROC/WEB/0] OUT 15:49:25 nginx   | 39.190.214.105 - - [31/Oct/2019:15:49:25 +0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 4962 vcap_request_id=fdd370f2-85b4-4fa2-7e0d-70a42a0d47f2
+   2019-10-31T23:49:26.35+0800 [RTR/20] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:49:26.333+0000] "GET /favicon.ico HTTP/1.1" 200 0 15086 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=1" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.34:19742" "169.46.101.101:61232" x_forwarded_for:"39.190.214.105, 10.186.136.34" x_forwarded_proto:"https" vcap_request_id:"dd8728ce-2a63-4332-4bff-065ffdd1fa08" response_time:0.01880348 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"9f474cea5dbb0286d1f320ef" true_client_ip:"-" x_b3_traceid:"47c23bc14f9168ae" x_b3_spanid:"47c23bc14f9168ae" x_b3_parentspanid:"-" b3:"47c23bc14f9168ae-47c23bc14f9168ae"
+   2019-10-31T23:49:26.35+0800 [RTR/20] OUT 
+   2019-10-31T23:49:26.44+0800 [APP/PROC/WEB/0] OUT 15:49:26 nginx   | 39.190.214.105 - - [31/Oct/2019:15:49:26 +0000] "GET /favicon.ico HTTP/1.1" 200 15086 vcap_request_id=dd8728ce-2a63-4332-4bff-065ffdd1fa08
+   2019-10-31T23:50:06.24+0800 [API/0] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-10-31T23:50:07.75+0800 [API/20] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:50:14.86+0800 [CELL/0] OUT Cell f68ed9f2-909e-4062-bff5-f822d9179c3d stopping instance 51479995-59ef-4a21-5ed1-f748
+   2019-10-31T23:50:14.86+0800 [API/13] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STOPPED"})
+   2019-10-31T23:50:15.68+0800 [API/4] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:50:17.42+0800 [API/4] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-10-31T23:50:18.05+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-10-31T23:50:18.21+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-10-31T23:50:18.21+0800 [STG/0] OUT Cell 0707900e-d3f3-4037-bacc-68ea5d0c9779 creating container for instance 3fe2b616-4f2d-4515-b5ab-36300d0072d8
+   2019-10-31T23:50:20.11+0800 [CELL/SSHD/0] OUT Exit status 0
+   2019-10-31T23:50:20.21+0800 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-10-31T23:50:20.36+0800 [CELL/0] OUT Cell f68ed9f2-909e-4062-bff5-f822d9179c3d destroying container for instance 51479995-59ef-4a21-5ed1-f748
+   2019-10-31T23:50:20.67+0800 [PROXY/0] OUT Exit status 137
+   2019-10-31T23:50:21.73+0800 [CELL/0] OUT Cell f68ed9f2-909e-4062-bff5-f822d9179c3d successfully destroyed container for instance 51479995-59ef-4a21-5ed1-f748
+   2019-10-31T23:50:22.75+0800 [STG/0] OUT Cell 0707900e-d3f3-4037-bacc-68ea5d0c9779 successfully created container for instance 3fe2b616-4f2d-4515-b5ab-36300d0072d8
+   2019-10-31T23:50:23.15+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-10-31T23:50:23.15+0800 [STG/0] OUT Downloading app package...
+   2019-10-31T23:50:23.46+0800 [STG/0] OUT Downloaded build artifacts cache (225B)
+   2019-10-31T23:50:23.54+0800 [STG/0] OUT Downloaded app package (363.6K)
+   2019-10-31T23:50:24.35+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-10-31T23:50:29.36+0800 [STG/0] OUT Installing Nginx
+   2019-10-31T23:50:30.41+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-10-31T23:50:31.32+0800 [STG/0] OUT NGINX 1.15.12
+   2019-10-31T23:50:31.32+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-10-31T23:50:31.32+0800 [STG/0] OUT Installing PHP
+   2019-10-31T23:50:31.32+0800 [STG/0] OUT PHP 7.2.19
+   2019-10-31T23:50:34.74+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/php/php7-7.2.19-linux-x64-cflinuxfs3-d7995d10.tgz] to [/tmp]
+   2019-10-31T23:50:47.23+0800 [STG/0] ERR The extension 'apc' is not provided by this buildpack.
+   2019-10-31T23:50:49.01+0800 [STG/0] OUT Finished: [2019-10-31 15:50:49.019121]
+   2019-10-31T23:51:43.66+0800 [STG/0] OUT Exit status 0
+   2019-10-31T23:51:43.66+0800 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-10-31T23:51:43.66+0800 [STG/0] OUT Uploading build artifacts cache...
+   2019-10-31T23:51:43.66+0800 [STG/0] OUT Uploading droplet...
+   2019-10-31T23:51:43.93+0800 [STG/0] OUT Uploaded build artifacts cache (227B)
+   2019-10-31T23:51:45.88+0800 [API/25] OUT Creating droplet for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:51:53.26+0800 [STG/0] OUT Uploaded droplet (75.6M)
+   2019-10-31T23:51:53.31+0800 [STG/0] OUT Uploading complete
+   2019-10-31T23:51:54.32+0800 [STG/0] OUT Cell 0707900e-d3f3-4037-bacc-68ea5d0c9779 stopping instance 3fe2b616-4f2d-4515-b5ab-36300d0072d8
+   2019-10-31T23:51:54.32+0800 [STG/0] OUT Cell 0707900e-d3f3-4037-bacc-68ea5d0c9779 destroying container for instance 3fe2b616-4f2d-4515-b5ab-36300d0072d8
+   2019-10-31T23:51:55.85+0800 [CELL/0] OUT Cell 9a016ce4-0142-4cab-91f5-1b4553779e3e creating container for instance 59b82168-2bbf-4ef3-63ab-6437
+   2019-10-31T23:51:57.61+0800 [STG/0] OUT Cell 0707900e-d3f3-4037-bacc-68ea5d0c9779 successfully destroyed container for instance 3fe2b616-4f2d-4515-b5ab-36300d0072d8
+   2019-10-31T23:51:57.78+0800 [CELL/0] OUT Cell 9a016ce4-0142-4cab-91f5-1b4553779e3e successfully created container for instance 59b82168-2bbf-4ef3-63ab-6437
+   2019-10-31T23:51:58.15+0800 [CELL/0] OUT Downloading droplet...
+   2019-10-31T23:52:03.74+0800 [CELL/0] OUT Downloaded droplet (75.6M)
+   2019-10-31T23:52:03.74+0800 [CELL/0] OUT Starting health monitoring of container
+   2019-10-31T23:52:05.67+0800 [APP/PROC/WEB/0] OUT 15:52:05 nginx   | 2019/10/31 15:52:05 [notice] 104#0: using the "epoll" event method
+   2019-10-31T23:52:05.67+0800 [APP/PROC/WEB/0] OUT 15:52:05 nginx   | 2019/10/31 15:52:05 [notice] 104#0: nginx/1.15.12
+   2019-10-31T23:52:05.67+0800 [APP/PROC/WEB/0] OUT 15:52:05 nginx   | 2019/10/31 15:52:05 [notice] 104#0: built by gcc 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+   2019-10-31T23:52:05.67+0800 [APP/PROC/WEB/0] OUT 15:52:05 nginx   | 2019/10/31 15:52:05 [notice] 104#0: OS: Linux 4.15.0-60-generic
+   2019-10-31T23:52:05.67+0800 [APP/PROC/WEB/0] OUT 15:52:05 nginx   | 2019/10/31 15:52:05 [notice] 104#0: getrlimit(RLIMIT_NOFILE): 16384:16384
+   2019-10-31T23:52:05.67+0800 [APP/PROC/WEB/0] OUT 15:52:05 nginx   | 2019/10/31 15:52:05 [notice] 104#0: start worker processes
+   2019-10-31T23:52:05.67+0800 [APP/PROC/WEB/0] OUT 15:52:05 nginx   | 2019/10/31 15:52:05 [notice] 104#0: start worker process 106
+   2019-10-31T23:52:05.67+0800 [APP/PROC/WEB/0] OUT 15:52:05 nginx   | 2019/10/31 15:52:05 [notice] 104#0: start worker process 107
+   2019-10-31T23:52:05.67+0800 [APP/PROC/WEB/0] OUT 15:52:05 nginx   | 2019/10/31 15:52:05 [notice] 104#0: start worker process 108
+   2019-10-31T23:52:05.67+0800 [APP/PROC/WEB/0] OUT 15:52:05 nginx   | 2019/10/31 15:52:05 [notice] 104#0: start worker process 109
+   2019-10-31T23:52:05.83+0800 [APP/PROC/WEB/0] OUT 15:52:05 php-fpm | [31-Oct-2019 15:52:05] NOTICE: fpm is running, pid 110
+   2019-10-31T23:52:05.83+0800 [APP/PROC/WEB/0] OUT 15:52:05 php-fpm | [31-Oct-2019 15:52:05] NOTICE: ready to handle connections
+   2019-10-31T23:52:08.10+0800 [CELL/0] OUT Container became healthy
+   2019-10-31T23:52:28.13+0800 [RTR/21] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:52:28.098+0000] "GET / HTTP/1.1" 200 0 4906 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:39974" "169.47.200.185:61046" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"e0f2e20d-e6d9-4119-6483-c8ab7b6c297d" response_time:0.034834845 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbb033cdc4fd143" true_client_ip:"-" x_b3_traceid:"f640d547d4c45a67" x_b3_spanid:"f640d547d4c45a67" x_b3_parentspanid:"-" b3:"f640d547d4c45a67-f640d547d4c45a67"
+   2019-10-31T23:52:28.13+0800 [RTR/21] OUT 
+   2019-10-31T23:52:28.20+0800 [APP/PROC/WEB/0] OUT 15:52:28 nginx   | 39.190.214.105 - - [31/Oct/2019:15:52:28 +0000] "GET / HTTP/1.1" 200 4919 vcap_request_id=e0f2e20d-e6d9-4119-6483-c8ab7b6c297d
+   2019-10-31T23:52:29.85+0800 [RTR/27] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:52:29.836+0000] "GET /setup/install.php HTTP/1.1" 200 0 2394 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:49680" "169.47.200.185:61046" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"1ac8b888-7512-43ea-4fa6-214da325ac2c" response_time:0.022571112 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbb033df5638b1f" true_client_ip:"-" x_b3_traceid:"81e4552654396ebf" x_b3_spanid:"81e4552654396ebf" x_b3_parentspanid:"-" b3:"81e4552654396ebf-81e4552654396ebf"
+   2019-10-31T23:52:29.85+0800 [RTR/27] OUT 
+   2019-10-31T23:52:29.92+0800 [APP/PROC/WEB/0] OUT 15:52:29 nginx   | 39.190.214.105 - - [31/Oct/2019:15:52:29 +0000] "GET /setup/install.php HTTP/1.1" 200 2406 vcap_request_id=1ac8b888-7512-43ea-4fa6-214da325ac2c
+   2019-10-31T23:52:30.25+0800 [RTR/21] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:52:30.240+0000] "GET /license.html HTTP/1.1" 304 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:18516" "169.47.200.185:61046" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"fb14a1d7-9b72-477f-7cd8-4d32f3714fd7" response_time:0.012552888 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbb033ef564283f" true_client_ip:"-" x_b3_traceid:"af6980c7c81f5d76" x_b3_spanid:"af6980c7c81f5d76" x_b3_parentspanid:"-" b3:"af6980c7c81f5d76-af6980c7c81f5d76"
+   2019-10-31T23:52:30.25+0800 [RTR/21] OUT 
+   2019-10-31T23:52:30.34+0800 [APP/PROC/WEB/0] OUT 15:52:30 nginx   | 39.190.214.105 - - [31/Oct/2019:15:52:30 +0000] "GET /license.html HTTP/1.1" 304 0 vcap_request_id=fb14a1d7-9b72-477f-7cd8-4d32f3714fd7
+   2019-10-31T23:52:32.72+0800 [RTR/25] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:52:32.711+0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 0 4952 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:12832" "169.47.200.185:61046" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"0d97c51d-e5d7-44cf-48da-38b8e001118c" response_time:0.013514567 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbb0340578fa5a7" true_client_ip:"-" x_b3_traceid:"fba2bcf8310c2aa9" x_b3_spanid:"fba2bcf8310c2aa9" x_b3_parentspanid:"-" b3:"fba2bcf8310c2aa9-fba2bcf8310c2aa9"
+   2019-10-31T23:52:32.72+0800 [RTR/25] OUT 
+   2019-10-31T23:52:32.79+0800 [APP/PROC/WEB/0] OUT 15:52:32 nginx   | 39.190.214.105 - - [31/Oct/2019:15:52:32 +0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 4965 vcap_request_id=0d97c51d-e5d7-44cf-48da-38b8e001118c
+   2019-10-31T23:52:39.84+0800 [RTR/21] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:52:39.838+0000] "GET /setup/install.php?step=2 HTTP/1.1" 200 0 2015 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=1" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:43496" "169.47.200.185:61046" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"53e49d72-7b5c-4efe-4aa7-b2b2d42831be" response_time:0.007713855 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbb03474931dc99" true_client_ip:"-" x_b3_traceid:"4cf5c938a814d223" x_b3_spanid:"4cf5c938a814d223" x_b3_parentspanid:"-" b3:"4cf5c938a814d223-4cf5c938a814d223"
+   2019-10-31T23:52:39.84+0800 [RTR/21] OUT 
+   2019-10-31T23:52:39.93+0800 [APP/PROC/WEB/0] OUT 15:52:39 nginx   | 39.190.214.105 - - [31/Oct/2019:15:52:39 +0000] "GET /setup/install.php?step=2 HTTP/1.1" 200 2027 vcap_request_id=53e49d72-7b5c-4efe-4aa7-b2b2d42831be
+   2019-10-31T23:52:42.28+0800 [RTR/27] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:52:42.277+0000] "GET /setup/install.php?step=100 HTTP/1.1" 200 0 3118 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:56830" "169.47.200.185:61046" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"2ffb6d37-49c2-4fa0-7026-d9e3e593381d" response_time:0.00600357 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbb034af566133f" true_client_ip:"-" x_b3_traceid:"8f22d36f1cac2ec5" x_b3_spanid:"8f22d36f1cac2ec5" x_b3_parentspanid:"-" b3:"8f22d36f1cac2ec5-8f22d36f1cac2ec5"
+   2019-10-31T23:52:42.28+0800 [RTR/27] OUT 
+   2019-10-31T23:52:42.37+0800 [APP/PROC/WEB/0] OUT 15:52:42 nginx   | 39.190.214.105 - - [31/Oct/2019:15:52:42 +0000] "GET /setup/install.php?step=100 HTTP/1.1" 200 3130 vcap_request_id=2ffb6d37-49c2-4fa0-7026-d9e3e593381d
+   2019-10-31T23:52:58.50+0800 [RTR/21] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:52:58.496+0000] "GET /setup/install.php?step=3 HTTP/1.1" 200 0 4041 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:44208" "169.47.200.185:61046" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"99575a72-1388-4cf2-55f6-9d6fd6189633" response_time:0.007002808 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbb035a20ec4e0d" true_client_ip:"-" x_b3_traceid:"5fed680367c1f7a9" x_b3_spanid:"5fed680367c1f7a9" x_b3_parentspanid:"-" b3:"5fed680367c1f7a9-5fed680367c1f7a9"
+   2019-10-31T23:52:58.50+0800 [RTR/21] OUT 
+   2019-10-31T23:52:58.57+0800 [APP/PROC/WEB/0] OUT 15:52:58 nginx   | 39.190.214.105 - - [31/Oct/2019:15:52:58 +0000] "GET /setup/install.php?step=3 HTTP/1.1" 200 4053 vcap_request_id=99575a72-1388-4cf2-55f6-9d6fd6189633
+   2019-10-31T23:53:22.25+0800 [RTR/20] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T15:53:22.161+0000] "POST /setup/install.php?step=4 HTTP/1.1" 200 132 6005 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=3" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.186.136.36:38189" "169.47.200.185:61046" x_forwarded_for:"39.190.214.105, 10.186.136.36" x_forwarded_proto:"https" vcap_request_id:"94fbc787-a689-4282-5486-2b0cf3238dbd" response_time:0.097487405 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"cb47d0745dbb03721bf98bc1" true_client_ip:"-" x_b3_traceid:"5ce4c6878b358c06" x_b3_spanid:"5ce4c6878b358c06" x_b3_parentspanid:"-" b3:"5ce4c6878b358c06-5ce4c6878b358c06"
+   2019-10-31T23:53:22.25+0800 [RTR/20] OUT 
+   2019-10-31T23:53:22.34+0800 [APP/PROC/WEB/0] OUT 15:53:22 nginx   | 39.190.214.105 - - [31/Oct/2019:15:53:22 +0000] "POST /setup/install.php?step=4 HTTP/1.1" 200 6018 vcap_request_id=94fbc787-a689-4282-5486-2b0cf3238dbd
+   2019-10-31T23:59:30.84+0800 [API/22] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-10-31T23:59:32.42+0800 [API/17] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:59:39.47+0800 [API/26] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STOPPED"})
+   2019-10-31T23:59:39.49+0800 [CELL/0] OUT Cell 9a016ce4-0142-4cab-91f5-1b4553779e3e stopping instance 59b82168-2bbf-4ef3-63ab-6437
+   2019-10-31T23:59:40.42+0800 [API/22] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-10-31T23:59:40.89+0800 [API/22] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-10-31T23:59:41.37+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-10-31T23:59:41.42+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-10-31T23:59:41.42+0800 [STG/0] OUT Cell 8ee92685-f319-4c5e-8167-267c4d02cf9e creating container for instance 61b8e96f-7c2e-494c-b144-717567601a6b
+   2019-10-31T23:59:44.28+0800 [STG/0] OUT Cell 8ee92685-f319-4c5e-8167-267c4d02cf9e successfully created container for instance 61b8e96f-7c2e-494c-b144-717567601a6b
+   2019-10-31T23:59:44.74+0800 [STG/0] OUT Downloading app package...
+   2019-10-31T23:59:44.74+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-10-31T23:59:44.92+0800 [CELL/SSHD/0] OUT Exit status 0
+   2019-10-31T23:59:45.00+0800 [STG/0] OUT Downloaded build artifacts cache (227B)
+   2019-10-31T23:59:45.06+0800 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-10-31T23:59:45.18+0800 [STG/0] OUT Downloaded app package (363.6K)
+   2019-10-31T23:59:45.50+0800 [CELL/0] OUT Cell 9a016ce4-0142-4cab-91f5-1b4553779e3e destroying container for instance 59b82168-2bbf-4ef3-63ab-6437
+   2019-10-31T23:59:45.79+0800 [PROXY/0] OUT Exit status 137
+   2019-10-31T23:59:46.23+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-10-31T23:59:48.31+0800 [STG/0] OUT Installing Nginx
+   2019-10-31T23:59:48.89+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-10-31T23:59:49.21+0800 [STG/0] OUT NGINX 1.15.12
+   2019-10-31T23:59:49.21+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-10-31T23:59:49.21+0800 [STG/0] OUT Installing PHP
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR Traceback (most recent call last):
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/scripts/compile.py", line 59, in <module>
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR     .from_build_pack('lib/additional_commands')
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/build_pack_utils/builder.py", line 212, in extensions
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR     process_extension(path, ctx, 'compile', process, args=[self])
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/build_pack_utils/utils.py", line 69, in process_extension
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR     success(getattr(extn, to_call)(*args))
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/extension_helpers.py", line 48, in extension_helper_wrapper
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR     return getattr(inst, 'compile')(install)
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/extension_helpers.py", line 154, in compile
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR     self._compile(install)
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/php/extension.py", line 133, in _compile
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR     validate_php_version(ctx)
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/compile_helpers.py", line 91, in validate_php_version
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR     if ctx['PHP_VERSION'] in ctx['ALL_PHP_VERSIONS']:
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/build_pack_utils/utils.py", line 151, in __getitem__
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR     return self.format(dict.__getitem__(self, key))
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/build_pack_utils/utils.py", line 142, in format
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR     val = val.format(**self)
+   2019-10-31T23:59:49.21+0800 [STG/0] ERR KeyError: u'PHP_70_LATEST'
+   2019-10-31T23:59:49.23+0800 [STG/0] ERR Failed to compile droplet: Failed to run finalize script: exit status 1
+   2019-10-31T23:59:49.31+0800 [STG/0] OUT Exit status 223
+   2019-10-31T23:59:49.83+0800 [STG/0] OUT Cell 8ee92685-f319-4c5e-8167-267c4d02cf9e stopping instance 61b8e96f-7c2e-494c-b144-717567601a6b
+   2019-10-31T23:59:49.83+0800 [STG/0] OUT Cell 8ee92685-f319-4c5e-8167-267c4d02cf9e destroying container for instance 61b8e96f-7c2e-494c-b144-717567601a6b
+   2019-10-31T23:59:49.89+0800 [CELL/0] OUT Cell 9a016ce4-0142-4cab-91f5-1b4553779e3e successfully destroyed container for instance 59b82168-2bbf-4ef3-63ab-6437
+   2019-10-31T23:59:50.13+0800 [API/22] ERR Failed to stage build: staging failed
+   2019-10-31T23:59:51.38+0800 [STG/0] OUT Cell 8ee92685-f319-4c5e-8167-267c4d02cf9e successfully destroyed container for instance 61b8e96f-7c2e-494c-b144-717567601a6b
+   2019-11-01T00:08:04.86+0800 [API/23] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-11-01T00:08:07.08+0800 [API/25] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-11-01T00:08:14.03+0800 [API/25] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-11-01T00:08:14.79+0800 [API/25] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-11-01T00:08:15.02+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-11-01T00:08:15.09+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-11-01T00:08:15.09+0800 [STG/0] OUT Cell 2227a944-45b8-49b7-86b6-25c25bc6b540 creating container for instance c90aed45-a751-4958-b636-6985197da5b5
+   2019-11-01T00:08:17.17+0800 [STG/0] OUT Cell 2227a944-45b8-49b7-86b6-25c25bc6b540 successfully created container for instance c90aed45-a751-4958-b636-6985197da5b5
+   2019-11-01T00:08:17.42+0800 [STG/0] OUT Downloading app package...
+   2019-11-01T00:08:17.42+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-11-01T00:08:17.55+0800 [STG/0] OUT Downloaded build artifacts cache (227B)
+   2019-11-01T00:08:17.66+0800 [STG/0] OUT Downloaded app package (363.6K)
+   2019-11-01T00:08:18.19+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-11-01T00:08:19.51+0800 [STG/0] OUT Installing Nginx
+   2019-11-01T00:08:19.94+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-11-01T00:08:20.22+0800 [STG/0] OUT NGINX 1.15.12
+   2019-11-01T00:08:20.22+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-11-01T00:08:20.22+0800 [STG/0] OUT Installing PHP
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR Traceback (most recent call last):
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/scripts/compile.py", line 59, in <module>
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR     .from_build_pack('lib/additional_commands')
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/build_pack_utils/builder.py", line 212, in extensions
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR     process_extension(path, ctx, 'compile', process, args=[self])
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/build_pack_utils/utils.py", line 69, in process_extension
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR     success(getattr(extn, to_call)(*args))
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/extension_helpers.py", line 48, in extension_helper_wrapper
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR     return getattr(inst, 'compile')(install)
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/extension_helpers.py", line 154, in compile
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR     self._compile(install)
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/php/extension.py", line 133, in _compile
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR     validate_php_version(ctx)
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/compile_helpers.py", line 91, in validate_php_version
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR     if ctx['PHP_VERSION'] in ctx['ALL_PHP_VERSIONS']:
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/build_pack_utils/utils.py", line 151, in __getitem__
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR     return self.format(dict.__getitem__(self, key))
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR   File "/tmp/buildpacks/6ec605fde256423b75741b4a4a1dd214/lib/build_pack_utils/utils.py", line 142, in format
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR     val = val.format(**self)
+   2019-11-01T00:08:20.23+0800 [STG/0] ERR KeyError: u'PHP_70'
+   2019-11-01T00:08:20.25+0800 [STG/0] ERR Failed to compile droplet: Failed to run finalize script: exit status 1
+   2019-11-01T00:08:20.40+0800 [STG/0] OUT Exit status 223
+   2019-11-01T00:08:20.66+0800 [STG/0] OUT Cell 2227a944-45b8-49b7-86b6-25c25bc6b540 stopping instance c90aed45-a751-4958-b636-6985197da5b5
+   2019-11-01T00:08:20.66+0800 [STG/0] OUT Cell 2227a944-45b8-49b7-86b6-25c25bc6b540 destroying container for instance c90aed45-a751-4958-b636-6985197da5b5
+   2019-11-01T00:08:20.88+0800 [API/17] ERR Failed to stage build: staging failed
+   2019-11-01T00:08:22.32+0800 [STG/0] OUT Cell 2227a944-45b8-49b7-86b6-25c25bc6b540 successfully destroyed container for instance c90aed45-a751-4958-b636-6985197da5b5
+   2019-11-01T00:10:57.43+0800 [API/20] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-11-01T00:10:59.28+0800 [API/21] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-11-01T00:11:09.62+0800 [API/8] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-11-01T00:11:10.20+0800 [API/8] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-11-01T00:11:10.80+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-11-01T00:11:10.89+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-11-01T00:11:10.89+0800 [STG/0] OUT Cell 8b37c272-df41-4ee7-9ec8-df0cb9d4934a creating container for instance 83f74944-6411-46fa-80dd-ddec6a08e687
+   2019-11-01T00:11:12.16+0800 [STG/0] OUT Cell 8b37c272-df41-4ee7-9ec8-df0cb9d4934a successfully created container for instance 83f74944-6411-46fa-80dd-ddec6a08e687
+   2019-11-01T00:11:12.51+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-11-01T00:11:12.51+0800 [STG/0] OUT Downloading app package...
+   2019-11-01T00:11:12.62+0800 [STG/0] OUT Downloaded build artifacts cache (227B)
+   2019-11-01T00:11:12.70+0800 [STG/0] OUT Downloaded app package (363.6K)
+   2019-11-01T00:11:13.12+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-11-01T00:11:14.19+0800 [STG/0] OUT Installing Nginx
+   2019-11-01T00:11:14.59+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-11-01T00:11:14.82+0800 [STG/0] OUT NGINX 1.15.12
+   2019-11-01T00:11:14.82+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-11-01T00:11:14.82+0800 [STG/0] OUT Installing PHP
+   2019-11-01T00:11:14.82+0800 [STG/0] OUT PHP 7.1.30
+   2019-11-01T00:11:18.45+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/php/php7-7.1.30-linux-x64-cflinuxfs3-52638798.tgz] to [/tmp]
+   2019-11-01T00:11:22.14+0800 [STG/0] ERR The extension 'apc' is not provided by this buildpack.
+   2019-11-01T00:11:22.90+0800 [STG/0] OUT Finished: [2019-10-31 16:11:22.905996]
+   2019-11-01T00:11:43.43+0800 [STG/0] OUT Exit status 0
+   2019-11-01T00:11:43.43+0800 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-11-01T00:11:43.43+0800 [STG/0] OUT Uploading droplet...
+   2019-11-01T00:11:43.43+0800 [STG/0] OUT Uploading build artifacts cache...
+   2019-11-01T00:11:43.57+0800 [STG/0] OUT Uploaded build artifacts cache (227B)
+   2019-11-01T00:11:44.89+0800 [API/18] OUT Creating droplet for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-11-01T00:11:50.14+0800 [STG/0] OUT Uploaded droplet (73.3M)
+   2019-11-01T00:11:50.17+0800 [STG/0] OUT Uploading complete
+   2019-11-01T00:11:50.39+0800 [STG/0] OUT Cell 8b37c272-df41-4ee7-9ec8-df0cb9d4934a stopping instance 83f74944-6411-46fa-80dd-ddec6a08e687
+   2019-11-01T00:11:50.39+0800 [STG/0] OUT Cell 8b37c272-df41-4ee7-9ec8-df0cb9d4934a destroying container for instance 83f74944-6411-46fa-80dd-ddec6a08e687
+   2019-11-01T00:11:51.61+0800 [CELL/0] OUT Cell e3c9900d-191d-4497-b3cd-c08dabdd7ad3 creating container for instance d83d8bee-ca94-4f77-6705-b99d
+   2019-11-01T00:11:52.44+0800 [STG/0] OUT Cell 8b37c272-df41-4ee7-9ec8-df0cb9d4934a successfully destroyed container for instance 83f74944-6411-46fa-80dd-ddec6a08e687
+   2019-11-01T00:11:53.22+0800 [CELL/0] OUT Cell e3c9900d-191d-4497-b3cd-c08dabdd7ad3 successfully created container for instance d83d8bee-ca94-4f77-6705-b99d
+   2019-11-01T00:11:53.58+0800 [CELL/0] OUT Downloading droplet...
+   2019-11-01T00:11:59.79+0800 [CELL/0] OUT Downloaded droplet (73.3M)
+   2019-11-01T00:11:59.79+0800 [CELL/0] OUT Starting health monitoring of container
+   2019-11-01T00:12:02.15+0800 [APP/PROC/WEB/0] OUT 16:12:02 nginx   | 2019/10/31 16:12:02 [notice] 89#0: using the "epoll" event method
+   2019-11-01T00:12:02.15+0800 [APP/PROC/WEB/0] OUT 16:12:02 nginx   | 2019/10/31 16:12:02 [notice] 89#0: nginx/1.15.12
+   2019-11-01T00:12:02.15+0800 [APP/PROC/WEB/0] OUT 16:12:02 nginx   | 2019/10/31 16:12:02 [notice] 89#0: built by gcc 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+   2019-11-01T00:12:02.15+0800 [APP/PROC/WEB/0] OUT 16:12:02 nginx   | 2019/10/31 16:12:02 [notice] 89#0: OS: Linux 4.15.0-60-generic
+   2019-11-01T00:12:02.15+0800 [APP/PROC/WEB/0] OUT 16:12:02 nginx   | 2019/10/31 16:12:02 [notice] 89#0: getrlimit(RLIMIT_NOFILE): 16384:16384
+   2019-11-01T00:12:02.15+0800 [APP/PROC/WEB/0] OUT 16:12:02 nginx   | 2019/10/31 16:12:02 [notice] 89#0: start worker processes
+   2019-11-01T00:12:02.15+0800 [APP/PROC/WEB/0] OUT 16:12:02 nginx   | 2019/10/31 16:12:02 [notice] 89#0: start worker process 90
+   2019-11-01T00:12:02.15+0800 [APP/PROC/WEB/0] OUT 16:12:02 nginx   | 2019/10/31 16:12:02 [notice] 89#0: start worker process 91
+   2019-11-01T00:12:02.15+0800 [APP/PROC/WEB/0] OUT 16:12:02 nginx   | 2019/10/31 16:12:02 [notice] 89#0: start worker process 92
+   2019-11-01T00:12:02.15+0800 [APP/PROC/WEB/0] OUT 16:12:02 nginx   | 2019/10/31 16:12:02 [notice] 89#0: start worker process 93
+   2019-11-01T00:12:02.39+0800 [APP/PROC/WEB/0] OUT 16:12:02 php-fpm | [31-Oct-2019 16:12:02] NOTICE: fpm is running, pid 94
+   2019-11-01T00:12:02.39+0800 [APP/PROC/WEB/0] OUT 16:12:02 php-fpm | [31-Oct-2019 16:12:02] NOTICE: ready to handle connections
+   2019-11-01T00:12:04.12+0800 [CELL/0] OUT Container became healthy
+   2019-11-01T00:13:32.51+0800 [RTR/22] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T16:13:32.493+0000] "GET / HTTP/1.1" 200 0 4906 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.123:26791" "169.62.231.187:61202" x_forwarded_for:"39.190.214.105, 10.171.2.123" x_forwarded_proto:"https" vcap_request_id:"c5708f7d-94da-42b6-5bf0-e2cc8e6d9064" response_time:0.022841997 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"64e02e055dbb082cc4f1afa7" true_client_ip:"-" x_b3_traceid:"2e271861414b6a6f" x_b3_spanid:"2e271861414b6a6f" x_b3_parentspanid:"-" b3:"2e271861414b6a6f-2e271861414b6a6f"
+   2019-11-01T00:13:32.51+0800 [RTR/22] OUT 
+   2019-11-01T00:13:32.57+0800 [APP/PROC/WEB/0] OUT 16:13:32 nginx   | 39.190.214.105 - - [31/Oct/2019:16:13:32 +0000] "GET / HTTP/1.1" 200 4919 vcap_request_id=c5708f7d-94da-42b6-5bf0-e2cc8e6d9064
+   2019-11-01T00:13:38.14+0800 [RTR/9] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T16:13:37.757+0000] "GET /setup/install.php HTTP/1.1" 200 0 2394 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.123:22520" "169.62.231.187:61202" x_forwarded_for:"39.190.214.105, 10.171.2.123" x_forwarded_proto:"https" vcap_request_id:"454861e3-c1cf-4e32-7d40-6b7f17c94527" response_time:0.390194306 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"64e02e055dbb0831e7d009f1" true_client_ip:"-" x_b3_traceid:"2e862836666c02c6" x_b3_spanid:"2e862836666c02c6" x_b3_parentspanid:"-" b3:"2e862836666c02c6-2e862836666c02c6"
+   2019-11-01T00:13:38.14+0800 [RTR/9] OUT 
+   2019-11-01T00:13:38.21+0800 [APP/PROC/WEB/0] OUT 16:13:38 nginx   | 39.190.214.105 - - [31/Oct/2019:16:13:38 +0000] "GET /setup/install.php HTTP/1.1" 200 2406 vcap_request_id=454861e3-c1cf-4e32-7d40-6b7f17c94527
+   2019-11-01T00:13:38.55+0800 [RTR/9] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T16:13:38.553+0000] "GET /license.html HTTP/1.1" 304 0 0 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.124:44800" "169.62.231.187:61202" x_forwarded_for:"39.190.214.105, 10.171.2.124" x_forwarded_proto:"https" vcap_request_id:"465330da-0882-42f8-45f6-c2ed17b2f25e" response_time:0.004038642 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"dccbb8d45dbb08320833739d" true_client_ip:"-" x_b3_traceid:"4667b8f1d16a2772" x_b3_spanid:"4667b8f1d16a2772" x_b3_parentspanid:"-" b3:"4667b8f1d16a2772-4667b8f1d16a2772"
+   2019-11-01T00:13:38.55+0800 [RTR/9] OUT 
+   2019-11-01T00:13:38.62+0800 [APP/PROC/WEB/0] OUT 16:13:38 nginx   | 39.190.214.105 - - [31/Oct/2019:16:13:38 +0000] "GET /license.html HTTP/1.1" 304 0 vcap_request_id=465330da-0882-42f8-45f6-c2ed17b2f25e
+   2019-11-01T00:13:41.55+0800 [RTR/25] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T16:13:41.528+0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 0 4952 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.171.2.124:23480" "169.62.231.187:61202" x_forwarded_for:"39.190.214.105, 10.171.2.124" x_forwarded_proto:"https" vcap_request_id:"dc3c31e2-d916-4521-6717-8670f3c724ec" response_time:0.023007449 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"dccbb8d45dbb083513061ba7" true_client_ip:"-" x_b3_traceid:"ec5a7d46e3f2a5e4" x_b3_spanid:"ec5a7d46e3f2a5e4" x_b3_parentspanid:"-" b3:"ec5a7d46e3f2a5e4-ec5a7d46e3f2a5e4"
+   2019-11-01T00:13:41.55+0800 [RTR/25] OUT 
+   2019-11-01T00:13:41.58+0800 [APP/PROC/WEB/0] OUT 16:13:41 nginx   | 39.190.214.105 - - [31/Oct/2019:16:13:41 +0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 4965 vcap_request_id=dc3c31e2-d916-4521-6717-8670f3c724ec
+   2019-11-01T00:14:27.87+0800 [API/17] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"buildpack"=>"php_buildpack", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>256, "name"=>"tieba-cloud-sign", "space_guid"=>"2c1831b8-2162-46b5-83e0-538090fa1353"})
+   2019-11-01T00:14:29.50+0800 [API/8] OUT Uploading bits for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-11-01T00:14:36.41+0800 [API/20] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STOPPED"})
+   2019-11-01T00:14:36.42+0800 [CELL/0] OUT Cell e3c9900d-191d-4497-b3cd-c08dabdd7ad3 stopping instance d83d8bee-ca94-4f77-6705-b99d
+   2019-11-01T00:14:37.22+0800 [API/4] OUT Creating build for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-11-01T00:14:37.82+0800 [API/4] OUT Updated app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9 ({"state"=>"STARTED"})
+   2019-11-01T00:14:38.15+0800 [STG/0] OUT Downloading php_buildpack...
+   2019-11-01T00:14:38.28+0800 [STG/0] OUT Downloaded php_buildpack
+   2019-11-01T00:14:38.29+0800 [STG/0] OUT Cell 7be4ac97-5124-4315-a19d-8b66a5574cdc creating container for instance b585a2bc-0457-43a5-a445-741accc417b8
+   2019-11-01T00:14:39.90+0800 [STG/0] OUT Cell 7be4ac97-5124-4315-a19d-8b66a5574cdc successfully created container for instance b585a2bc-0457-43a5-a445-741accc417b8
+   2019-11-01T00:14:40.36+0800 [STG/0] OUT Downloading app package...
+   2019-11-01T00:14:40.36+0800 [STG/0] OUT Downloading build artifacts cache...
+   2019-11-01T00:14:40.49+0800 [STG/0] OUT Downloaded build artifacts cache (227B)
+   2019-11-01T00:14:40.73+0800 [STG/0] OUT Downloaded app package (363.6K)
+   2019-11-01T00:14:41.24+0800 [STG/0] OUT -------> Buildpack version 4.3.78
+   2019-11-01T00:14:41.73+0800 [CELL/SSHD/0] OUT Exit status 0
+   2019-11-01T00:14:41.84+0800 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-11-01T00:14:42.11+0800 [CELL/0] OUT Cell e3c9900d-191d-4497-b3cd-c08dabdd7ad3 destroying container for instance d83d8bee-ca94-4f77-6705-b99d
+   2019-11-01T00:14:42.43+0800 [PROXY/0] OUT Exit status 137
+   2019-11-01T00:14:42.47+0800 [STG/0] OUT Installing Nginx
+   2019-11-01T00:14:42.81+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/nginx-static/nginx-1.15.12-linux-x64-cflinuxfs3-4b82e605.tgz] to [/tmp]
+   2019-11-01T00:14:43.06+0800 [STG/0] OUT NGINX 1.15.12
+   2019-11-01T00:14:43.07+0800 [STG/0] OUT Warning: PHP_EXTENSIONS in options.json is deprecated. See: http://docs.cloudfoundry.org/buildpacks/php/gsg-php-config.html
+   2019-11-01T00:14:43.07+0800 [STG/0] OUT Installing PHP
+   2019-11-01T00:14:43.07+0800 [STG/0] OUT PHP 7.1.30
+   2019-11-01T00:14:43.44+0800 [CELL/0] OUT Cell e3c9900d-191d-4497-b3cd-c08dabdd7ad3 successfully destroyed container for instance d83d8bee-ca94-4f77-6705-b99d
+   2019-11-01T00:14:44.74+0800 [STG/0] OUT Downloaded [https://buildpacks.cloudfoundry.org/dependencies/php/php7-7.1.30-linux-x64-cflinuxfs3-52638798.tgz] to [/tmp]
+   2019-11-01T00:14:47.77+0800 [STG/0] ERR The extension 'pdo_mysqli' is not provided by this buildpack.
+   2019-11-01T00:14:47.77+0800 [STG/0] ERR The extension 'apc' is not provided by this buildpack.
+   2019-11-01T00:14:48.57+0800 [STG/0] OUT Finished: [2019-10-31 16:14:48.569085]
+   2019-11-01T00:15:10.39+0800 [STG/0] OUT Exit status 0
+   2019-11-01T00:15:10.39+0800 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-11-01T00:15:10.39+0800 [STG/0] OUT Uploading droplet...
+   2019-11-01T00:15:10.39+0800 [STG/0] OUT Uploading build artifacts cache...
+   2019-11-01T00:15:10.58+0800 [STG/0] OUT Uploaded build artifacts cache (228B)
+   2019-11-01T00:15:11.97+0800 [API/10] OUT Creating droplet for app with guid 8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9
+   2019-11-01T00:15:16.32+0800 [STG/0] OUT Uploaded droplet (73.3M)
+   2019-11-01T00:15:16.35+0800 [STG/0] OUT Uploading complete
+   2019-11-01T00:15:17.15+0800 [STG/0] OUT Cell 7be4ac97-5124-4315-a19d-8b66a5574cdc stopping instance b585a2bc-0457-43a5-a445-741accc417b8
+   2019-11-01T00:15:17.15+0800 [STG/0] OUT Cell 7be4ac97-5124-4315-a19d-8b66a5574cdc destroying container for instance b585a2bc-0457-43a5-a445-741accc417b8
+   2019-11-01T00:15:18.53+0800 [CELL/0] OUT Cell 65a4e476-6411-42d0-92b9-003a1961a0a9 creating container for instance 8782cc90-a033-49c4-7b88-519b
+   2019-11-01T00:15:18.63+0800 [STG/0] OUT Cell 7be4ac97-5124-4315-a19d-8b66a5574cdc successfully destroyed container for instance b585a2bc-0457-43a5-a445-741accc417b8
+   2019-11-01T00:15:20.79+0800 [CELL/0] OUT Cell 65a4e476-6411-42d0-92b9-003a1961a0a9 successfully created container for instance 8782cc90-a033-49c4-7b88-519b
+   2019-11-01T00:15:21.02+0800 [CELL/0] OUT Downloading droplet...
+   2019-11-01T00:15:26.10+0800 [CELL/0] OUT Downloaded droplet (73.3M)
+   2019-11-01T00:15:26.10+0800 [CELL/0] OUT Starting health monitoring of container
+   2019-11-01T00:15:28.22+0800 [APP/PROC/WEB/0] OUT 16:15:28 nginx   | 2019/10/31 16:15:28 [notice] 96#0: using the "epoll" event method
+   2019-11-01T00:15:28.22+0800 [APP/PROC/WEB/0] OUT 16:15:28 nginx   | 2019/10/31 16:15:28 [notice] 96#0: nginx/1.15.12
+   2019-11-01T00:15:28.22+0800 [APP/PROC/WEB/0] OUT 16:15:28 nginx   | 2019/10/31 16:15:28 [notice] 96#0: built by gcc 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+   2019-11-01T00:15:28.22+0800 [APP/PROC/WEB/0] OUT 16:15:28 nginx   | 2019/10/31 16:15:28 [notice] 96#0: OS: Linux 4.15.0-60-generic
+   2019-11-01T00:15:28.22+0800 [APP/PROC/WEB/0] OUT 16:15:28 nginx   | 2019/10/31 16:15:28 [notice] 96#0: getrlimit(RLIMIT_NOFILE): 16384:16384
+   2019-11-01T00:15:28.22+0800 [APP/PROC/WEB/0] OUT 16:15:28 nginx   | 2019/10/31 16:15:28 [notice] 96#0: start worker processes
+   2019-11-01T00:15:28.22+0800 [APP/PROC/WEB/0] OUT 16:15:28 nginx   | 2019/10/31 16:15:28 [notice] 96#0: start worker process 98
+   2019-11-01T00:15:28.22+0800 [APP/PROC/WEB/0] OUT 16:15:28 nginx   | 2019/10/31 16:15:28 [notice] 96#0: start worker process 99
+   2019-11-01T00:15:28.22+0800 [APP/PROC/WEB/0] OUT 16:15:28 nginx   | 2019/10/31 16:15:28 [notice] 96#0: start worker process 100
+   2019-11-01T00:15:28.22+0800 [APP/PROC/WEB/0] OUT 16:15:28 nginx   | 2019/10/31 16:15:28 [notice] 96#0: start worker process 101
+   2019-11-01T00:15:28.42+0800 [APP/PROC/WEB/0] OUT 16:15:28 php-fpm | [31-Oct-2019 16:15:28] NOTICE: fpm is running, pid 102
+   2019-11-01T00:15:28.42+0800 [APP/PROC/WEB/0] OUT 16:15:28 php-fpm | [31-Oct-2019 16:15:28] NOTICE: ready to handle connections
+   2019-11-01T00:15:30.21+0800 [CELL/0] OUT Container became healthy
+   2019-11-01T00:16:22.55+0800 [RTR/6] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T16:16:22.515+0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 0 4949 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.184.41.3:58306" "169.47.199.83:61210" x_forwarded_for:"39.190.214.105, 10.184.41.3" x_forwarded_proto:"https" vcap_request_id:"bd830fca-c64c-4e1e-457a-9013fd7da4db" response_time:0.03597309 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"075554b25dbb08d61ff41bff" true_client_ip:"-" x_b3_traceid:"8647ed2612b3658a" x_b3_spanid:"8647ed2612b3658a" x_b3_parentspanid:"-" b3:"8647ed2612b3658a-8647ed2612b3658a"
+   2019-11-01T00:16:22.55+0800 [RTR/6] OUT 
+   2019-11-01T00:16:22.62+0800 [APP/PROC/WEB/0] OUT 16:16:22 nginx   | 39.190.214.105 - - [31/Oct/2019:16:16:22 +0000] "GET /setup/install.php?step=1 HTTP/1.1" 200 4962 vcap_request_id=bd830fca-c64c-4e1e-457a-9013fd7da4db
+   2019-11-01T00:16:24.61+0800 [RTR/11] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T16:16:24.579+0000] "GET /favicon.ico HTTP/1.1" 200 0 15086 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=1" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.184.41.3:23246" "169.47.199.83:61210" x_forwarded_for:"39.190.214.105, 10.184.41.3" x_forwarded_proto:"https" vcap_request_id:"b1d2a3ca-68d1-4db6-41ab-babfc5fa1542" response_time:0.030706601 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"075554b25dbb08d87c443c07" true_client_ip:"-" x_b3_traceid:"9eb0014a7b5c0b03" x_b3_spanid:"9eb0014a7b5c0b03" x_b3_parentspanid:"-" b3:"9eb0014a7b5c0b03-9eb0014a7b5c0b03"
+   2019-11-01T00:16:24.61+0800 [RTR/11] OUT 
+   2019-11-01T00:16:24.64+0800 [APP/PROC/WEB/0] OUT 16:16:24 nginx   | 39.190.214.105 - - [31/Oct/2019:16:16:24 +0000] "GET /favicon.ico HTTP/1.1" 200 15086 vcap_request_id=b1d2a3ca-68d1-4db6-41ab-babfc5fa1542
+   2019-11-01T00:16:26.04+0800 [RTR/26] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T16:16:25.988+0000] "GET /setup/install.php?step=2 HTTP/1.1" 200 0 2015 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=1" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.184.41.3:14497" "169.47.199.83:61210" x_forwarded_for:"39.190.214.105, 10.184.41.3" x_forwarded_proto:"https" vcap_request_id:"77a186f5-dff0-4e2d-581c-904af906ccf8" response_time:0.053309656 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"075554b25dbb08da1ff5067f" true_client_ip:"-" x_b3_traceid:"af46e04f897885e7" x_b3_spanid:"af46e04f897885e7" x_b3_parentspanid:"-" b3:"af46e04f897885e7-af46e04f897885e7"
+   2019-11-01T00:16:26.04+0800 [RTR/26] OUT 
+   2019-11-01T00:16:26.09+0800 [APP/PROC/WEB/0] OUT 16:16:26 nginx   | 39.190.214.105 - - [31/Oct/2019:16:16:26 +0000] "GET /setup/install.php?step=2 HTTP/1.1" 200 2027 vcap_request_id=77a186f5-dff0-4e2d-581c-904af906ccf8
+   2019-11-01T00:16:31.86+0800 [RTR/8] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T16:16:31.854+0000] "GET /setup/install.php?step=3 HTTP/1.1" 200 0 4041 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.184.41.3:43931" "169.47.199.83:61210" x_forwarded_for:"39.190.214.105, 10.184.41.3" x_forwarded_proto:"https" vcap_request_id:"094b72e0-3213-4f8e-680b-6277db2168c1" response_time:0.013802888 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"075554b25dbb08df7c445fb7" true_client_ip:"-" x_b3_traceid:"e34ad1f1ac9e4829" x_b3_spanid:"e34ad1f1ac9e4829" x_b3_parentspanid:"-" b3:"e34ad1f1ac9e4829-e34ad1f1ac9e4829"
+   2019-11-01T00:16:31.86+0800 [RTR/8] OUT 
+   2019-11-01T00:16:31.91+0800 [APP/PROC/WEB/0] OUT 16:16:31 nginx   | 39.190.214.105 - - [31/Oct/2019:16:16:31 +0000] "GET /setup/install.php?step=3 HTTP/1.1" 200 4053 vcap_request_id=094b72e0-3213-4f8e-680b-6277db2168c1
+   2019-11-01T00:16:44.29+0800 [RTR/19] OUT tieba-cloud-sign.us-south.cf.appdomain.cloud - [2019-10-31T16:16:44.266+0000] "POST /setup/install.php?step=4 HTTP/1.1" 200 132 6005 "https://tieba-cloud-sign.us-south.cf.appdomain.cloud/setup/install.php?step=3" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" "10.184.41.3:23797" "169.47.199.83:61210" x_forwarded_for:"39.190.214.105, 10.184.41.3" x_forwarded_proto:"https" vcap_request_id:"394633c3-1243-4506-56b2-0bf533c7a41d" response_time:0.023671108 app_id:"8e1d6c93-1677-4517-b4ff-2a1c9a90f2d9" app_index:"0" x_global_transaction_id:"075554b25dbb08eca07c4d21" true_client_ip:"-" x_b3_traceid:"90fca775c3d3eff7" x_b3_spanid:"90fca775c3d3eff7" x_b3_parentspanid:"-" b3:"90fca775c3d3eff7-90fca775c3d3eff7"
+   2019-11-01T00:16:44.29+0800 [RTR/19] OUT 
+   2019-11-01T00:16:44.38+0800 [APP/PROC/WEB/0] OUT 16:16:44 nginx   | 39.190.214.105 - - [31/Oct/2019:16:16:44 +0000] "POST /setup/install.php?step=4 HTTP/1.1" 200 6018 vcap_request_id=394633c3-1243-4506-56b2-0bf533c7a41d
